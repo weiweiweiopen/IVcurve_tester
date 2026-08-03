@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name "ivcurve_carrier")(type "KiCad")(uri "${KIPRJMOD}/ivcurve_carrier.pretty")(options "")(descr "IV curve carrier custom sequential-column DIP sockets"))
+  (lib (name "Resistor_SMD")(type "KiCad")(uri "${KICAD10_FOOTPRINT_DIR}/Resistor_SMD.pretty")(options "")(descr "KiCad standard SMD resistor footprints"))
+)

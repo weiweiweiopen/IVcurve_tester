@@ -1,0 +1,3324 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-08-01T09:45:20",
+    "ignored_checks": [
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "PTH inside courtyard",
+            "key": "pth_inside_courtyard"
+        },
+        {
+            "description": "NPTH inside courtyard",
+            "key": "npth_inside_courtyard"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.3",
+    "schematic_parity": [],
+    "source": "IVcurve-tester-v2.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "3 的非金屬化焊盤 [/MUX_A3] J2",
+                    "pos": {
+                        "x": 34.54,
+                        "y": 78.48
+                    },
+                    "uuid": "b755ddb8-2881-42e0-9a1d-62bc7231f3ef"
+                },
+                {
+                    "description": "1 上 [/MUX_A3] 的焊盤 TP16 F.Cu",
+                    "pos": {
+                        "x": 76.0,
+                        "y": 62.0
+                    },
+                    "uuid": "02da78c8-4841-48e0-a542-5a8a703dc9d8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "1 上 [/MUX_A3] 的焊盤 R25 F.Cu",
+                    "pos": {
+                        "x": 83.0,
+                        "y": 59.0
+                    },
+                    "uuid": "b24c8a67-625b-4605-9ba5-977e5289234f"
+                },
+                {
+                    "description": "1 上 [/MUX_A3] 的焊盤 TP16 F.Cu",
+                    "pos": {
+                        "x": 76.0,
+                        "y": 62.0
+                    },
+                    "uuid": "02da78c8-4841-48e0-a542-5a8a703dc9d8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "14 上 [/MUX_A3] 的焊盤 U2 F.Cu",
+                    "pos": {
+                        "x": 101.775,
+                        "y": 53.13
+                    },
+                    "uuid": "8cb6963e-7bd7-475f-987c-a965d8f69a47"
+                },
+                {
+                    "description": "1 上 [/MUX_A3] 的焊盤 R25 F.Cu",
+                    "pos": {
+                        "x": 83.0,
+                        "y": 59.0
+                    },
+                    "uuid": "b24c8a67-625b-4605-9ba5-977e5289234f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "1 上 [/MUX_A1] 的焊盤 TP14 F.Cu",
+                    "pos": {
+                        "x": 76.0,
+                        "y": 56.0
+                    },
+                    "uuid": "2ec3fe36-26aa-466e-beea-90979ab3f3b0"
+                },
+                {
+                    "description": "4 的非金屬化焊盤 [/MUX_A1] J2",
+                    "pos": {
+                        "x": 34.54,
+                        "y": 81.02
+                    },
+                    "uuid": "33acecd1-45a1-4e01-b19c-7aec4a474e0d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "1 上 [/MUX_A1] 的焊盤 R23 F.Cu",
+                    "pos": {
+                        "x": 83.0,
+                        "y": 53.0
+                    },
+                    "uuid": "943bc09b-7509-418d-aa17-f4508378e01a"
+                },
+                {
+                    "description": "1 上 [/MUX_A1] 的焊盤 TP14 F.Cu",
+                    "pos": {
+                        "x": 76.0,
+                        "y": 56.0
+                    },
+                    "uuid": "2ec3fe36-26aa-466e-beea-90979ab3f3b0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "16 上 [/MUX_A1] 的焊盤 U2 F.Cu",
+                    "pos": {
+                        "x": 102.425,
+                        "y": 58.87
+                    },
+                    "uuid": "6c1d1689-2635-4b01-97ce-609fe3059188"
+                },
+                {
+                    "description": "1 上 [/MUX_A1] 的焊盤 R23 F.Cu",
+                    "pos": {
+                        "x": 83.0,
+                        "y": 53.0
+                    },
+                    "uuid": "943bc09b-7509-418d-aa17-f4508378e01a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "5 的非金屬化焊盤 [/LOAD_SHORT_EN] J2",
+                    "pos": {
+                        "x": 34.54,
+                        "y": 83.56
+                    },
+                    "uuid": "7026c5cd-bf30-499a-a334-b1a690c242d9"
+                },
+                {
+                    "description": "1 上 [/LOAD_SHORT_EN] 的焊盤 R28 F.Cu",
+                    "pos": {
+                        "x": 120.0,
+                        "y": 50.0
+                    },
+                    "uuid": "2d809260-5615-4646-8dc1-149a9f23c023"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "4 的非金屬化焊盤 [/I2C_SDA] J7",
+                    "pos": {
+                        "x": 77.47,
+                        "y": 25.4
+                    },
+                    "uuid": "0d7d3f35-2af0-4fd7-bb90-4536fb54c515"
+                },
+                {
+                    "description": "6 的非金屬化焊盤 [/I2C_SDA] J2",
+                    "pos": {
+                        "x": 34.54,
+                        "y": 86.1
+                    },
+                    "uuid": "9abcd0ef-eb49-40fd-8886-14ca4e5d7c54"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "2 上 [/I2C_SDA] 的焊盤 R4 F.Cu",
+                    "pos": {
+                        "x": 116.5,
+                        "y": 89.5
+                    },
+                    "uuid": "0450f72e-7a5c-4721-a937-a7356aed7812"
+                },
+                {
+                    "description": "9 上 [/I2C_SDA] 的焊盤 U1 F.Cu",
+                    "pos": {
+                        "x": 128.15,
+                        "y": 82.5
+                    },
+                    "uuid": "bd1668fb-2b49-4c3b-9601-2d987eaec891"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "2 上 [/I2C_SDA] 的焊盤 R4 F.Cu",
+                    "pos": {
+                        "x": 116.5,
+                        "y": 89.5
+                    },
+                    "uuid": "0450f72e-7a5c-4721-a937-a7356aed7812"
+                },
+                {
+                    "description": "4 的非金屬化焊盤 [/I2C_SDA] J7",
+                    "pos": {
+                        "x": 77.47,
+                        "y": 25.4
+                    },
+                    "uuid": "0d7d3f35-2af0-4fd7-bb90-4536fb54c515"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "3 的非金屬化焊盤 [/I2C_SCL] J7",
+                    "pos": {
+                        "x": 74.93,
+                        "y": 25.4
+                    },
+                    "uuid": "98c9da11-2405-47a0-b1dd-f8e2857927d2"
+                },
+                {
+                    "description": "7 的非金屬化焊盤 [/I2C_SCL] J2",
+                    "pos": {
+                        "x": 34.54,
+                        "y": 88.64
+                    },
+                    "uuid": "2b80d4d3-488f-47aa-9fba-72cc233f1ff3"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "2 上 [/I2C_SCL] 的焊盤 R5 F.Cu",
+                    "pos": {
+                        "x": 121.0,
+                        "y": 92.0
+                    },
+                    "uuid": "678398c3-297a-4e7d-911d-142c290b12e5"
+                },
+                {
+                    "description": "10 上 [/I2C_SCL] 的焊盤 U1 F.Cu",
+                    "pos": {
+                        "x": 128.15,
+                        "y": 82.0
+                    },
+                    "uuid": "52f6d9b0-6cd3-4013-bc76-2fabbeb4b0af"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "10 上 [/I2C_SCL] 的焊盤 U1 F.Cu",
+                    "pos": {
+                        "x": 128.15,
+                        "y": 82.0
+                    },
+                    "uuid": "52f6d9b0-6cd3-4013-bc76-2fabbeb4b0af"
+                },
+                {
+                    "description": "3 的非金屬化焊盤 [/I2C_SCL] J7",
+                    "pos": {
+                        "x": 74.93,
+                        "y": 25.4
+                    },
+                    "uuid": "98c9da11-2405-47a0-b1dd-f8e2857927d2"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "2 上 [/MUX_EN] 的焊盤 JP1 F.Cu",
+                    "pos": {
+                        "x": 80.0,
+                        "y": 64.275
+                    },
+                    "uuid": "68b54493-c846-413e-b51c-81dcf47886a3"
+                },
+                {
+                    "description": "8 的非金屬化焊盤 [/MUX_EN] J2",
+                    "pos": {
+                        "x": 34.54,
+                        "y": 91.18
+                    },
+                    "uuid": "00a2fa5b-5e5b-4d6a-aba9-c992d355f2d9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "1 上 [/MUX_EN] 的焊盤 R26 F.Cu",
+                    "pos": {
+                        "x": 83.0,
+                        "y": 62.0
+                    },
+                    "uuid": "db316414-9029-4750-84ed-c8d2687f015d"
+                },
+                {
+                    "description": "2 上 [/MUX_EN] 的焊盤 JP1 F.Cu",
+                    "pos": {
+                        "x": 80.0,
+                        "y": 64.275
+                    },
+                    "uuid": "68b54493-c846-413e-b51c-81dcf47886a3"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "1 上 [/MUX_EN] 的焊盤 R26 F.Cu",
+                    "pos": {
+                        "x": 83.0,
+                        "y": 62.0
+                    },
+                    "uuid": "db316414-9029-4750-84ed-c8d2687f015d"
+                },
+                {
+                    "description": "1 上 [/MUX_EN] 的焊盤 TP12 F.Cu",
+                    "pos": {
+                        "x": 76.0,
+                        "y": 50.0
+                    },
+                    "uuid": "da1c8de8-4670-49c8-8bb1-cad6be59cb2e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "18 上 [/MUX_EN] 的焊盤 U2 F.Cu",
+                    "pos": {
+                        "x": 103.725,
+                        "y": 58.87
+                    },
+                    "uuid": "6997bbd4-910a-403f-915b-4d8c14b492cd"
+                },
+                {
+                    "description": "1 上 [/MUX_EN] 的焊盤 R26 F.Cu",
+                    "pos": {
+                        "x": 83.0,
+                        "y": 62.0
+                    },
+                    "uuid": "db316414-9029-4750-84ed-c8d2687f015d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "8 的非金屬化焊盤 [/+3V3] J1",
+                    "pos": {
+                        "x": 32.0,
+                        "y": 91.18
+                    },
+                    "uuid": "aead0799-cfb7-4147-8f99-ba5378e82e70"
+                },
+                {
+                    "description": "1 上 [/+3V3] 的焊盤 TP2 F.Cu",
+                    "pos": {
+                        "x": 66.0,
+                        "y": 92.0
+                    },
+                    "uuid": "051fe721-7b97-447e-91f8-a5965e5b6c16"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "1 上 [/+3V3] 的焊盤 TP2 F.Cu",
+                    "pos": {
+                        "x": 66.0,
+                        "y": 92.0
+                    },
+                    "uuid": "051fe721-7b97-447e-91f8-a5965e5b6c16"
+                },
+                {
+                    "description": "1 上 [/+3V3] 的焊盤 JP1 F.Cu",
+                    "pos": {
+                        "x": 80.0,
+                        "y": 65.725
+                    },
+                    "uuid": "3eccd977-4850-4511-af90-32bee08828a5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "2 的非金屬化焊盤 [/+3V3] J7",
+                    "pos": {
+                        "x": 72.39,
+                        "y": 25.4
+                    },
+                    "uuid": "c44b1168-ae7b-41e8-9ea1-f6fb4fcb0d42"
+                },
+                {
+                    "description": "1 的非金屬化焊盤 [/+3V3] J6",
+                    "pos": {
+                        "x": 44.0,
+                        "y": 29.0
+                    },
+                    "uuid": "9f945f75-e946-4424-8150-bd24260aeb13"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "1 上 [/+3V3] 的焊盤 JP1 F.Cu",
+                    "pos": {
+                        "x": 80.0,
+                        "y": 65.725
+                    },
+                    "uuid": "3eccd977-4850-4511-af90-32bee08828a5"
+                },
+                {
+                    "description": "1 的非金屬化焊盤 [/+3V3] J8",
+                    "pos": {
+                        "x": 82.0,
+                        "y": 29.0
+                    },
+                    "uuid": "ae1e5431-babd-4865-aa40-820f6d9d43a7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "1 上 [/+3V3] 的焊盤 JP1 F.Cu",
+                    "pos": {
+                        "x": 80.0,
+                        "y": 65.725
+                    },
+                    "uuid": "3eccd977-4850-4511-af90-32bee08828a5"
+                },
+                {
+                    "description": "1 上 [/+3V3] 的焊盤 R4 F.Cu",
+                    "pos": {
+                        "x": 114.5,
+                        "y": 89.5
+                    },
+                    "uuid": "21fa3b2b-9208-4796-a9e2-6918c1acb14b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "1 的非金屬化焊盤 [/+3V3] J8",
+                    "pos": {
+                        "x": 82.0,
+                        "y": 29.0
+                    },
+                    "uuid": "ae1e5431-babd-4865-aa40-820f6d9d43a7"
+                },
+                {
+                    "description": "2 的非金屬化焊盤 [/+3V3] J7",
+                    "pos": {
+                        "x": 72.39,
+                        "y": 25.4
+                    },
+                    "uuid": "c44b1168-ae7b-41e8-9ea1-f6fb4fcb0d42"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "1 的非金屬化焊盤 [/+3V3] J9",
+                    "pos": {
+                        "x": 94.0,
+                        "y": 29.0
+                    },
+                    "uuid": "aeea9447-cbfe-4d92-bb23-4e7e9bdf2282"
+                },
+                {
+                    "description": "1 的非金屬化焊盤 [/+3V3] J8",
+                    "pos": {
+                        "x": 82.0,
+                        "y": 29.0
+                    },
+                    "uuid": "ae1e5431-babd-4865-aa40-820f6d9d43a7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "1 上 [/+3V3] 的焊盤 R5 F.Cu",
+                    "pos": {
+                        "x": 119.0,
+                        "y": 92.0
+                    },
+                    "uuid": "3d4183f9-50c4-4cd9-bc69-c937deb0c7b7"
+                },
+                {
+                    "description": "1 上 [/+3V3] 的焊盤 R4 F.Cu",
+                    "pos": {
+                        "x": 114.5,
+                        "y": 89.5
+                    },
+                    "uuid": "21fa3b2b-9208-4796-a9e2-6918c1acb14b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "1 上 [/+3V3] 的焊盤 R5 F.Cu",
+                    "pos": {
+                        "x": 119.0,
+                        "y": 92.0
+                    },
+                    "uuid": "3d4183f9-50c4-4cd9-bc69-c937deb0c7b7"
+                },
+                {
+                    "description": "1 上 [/+3V3] 的焊盤 C3 F.Cu",
+                    "pos": {
+                        "x": 131.0,
+                        "y": 90.0375
+                    },
+                    "uuid": "85717f21-9a1f-4f69-9638-10655399f7cc"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "8 上 [/+3V3] 的焊盤 U1 F.Cu",
+                    "pos": {
+                        "x": 128.15,
+                        "y": 83.0
+                    },
+                    "uuid": "d558bc8a-a0c5-42a1-99c5-974ffdfcfd6c"
+                },
+                {
+                    "description": "1 上 [/+3V3] 的焊盤 C2 F.Cu",
+                    "pos": {
+                        "x": 131.0,
+                        "y": 84.8625
+                    },
+                    "uuid": "f158a5f8-1ade-4d53-8ebf-5e2b1c9bd04e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "1 上 [/+3V3] 的焊盤 C3 F.Cu",
+                    "pos": {
+                        "x": 131.0,
+                        "y": 90.0375
+                    },
+                    "uuid": "85717f21-9a1f-4f69-9638-10655399f7cc"
+                },
+                {
+                    "description": "1 上 [/+3V3] 的焊盤 C2 F.Cu",
+                    "pos": {
+                        "x": 131.0,
+                        "y": 84.8625
+                    },
+                    "uuid": "f158a5f8-1ade-4d53-8ebf-5e2b1c9bd04e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "7 的非金屬化焊盤 [/GND] J3",
+                    "pos": {
+                        "x": 52.32,
+                        "y": 88.64
+                    },
+                    "uuid": "1cc3f155-8d20-4c30-878e-bdae9ff4f567"
+                },
+                {
+                    "description": "7 的非金屬化焊盤 [/GND] J4",
+                    "pos": {
+                        "x": 54.86,
+                        "y": 88.64
+                    },
+                    "uuid": "bcc22908-79fe-4ef2-9cf4-57202de60a7e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "1 的非金屬化焊盤 [/GND] J7",
+                    "pos": {
+                        "x": 69.85,
+                        "y": 25.4
+                    },
+                    "uuid": "d8b47803-d1da-4309-99a4-c372e6aefe2e"
+                },
+                {
+                    "description": "2 的非金屬化焊盤 [/GND] J6",
+                    "pos": {
+                        "x": 46.54,
+                        "y": 29.0
+                    },
+                    "uuid": "058055c3-0b37-45e8-93ba-042a18d1e5d0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "1 上 [/GND] 的焊盤 TP3 F.Cu",
+                    "pos": {
+                        "x": 70.0,
+                        "y": 92.0
+                    },
+                    "uuid": "95bab59f-2ff0-4197-ae46-c25c1553547e"
+                },
+                {
+                    "description": "7 的非金屬化焊盤 [/GND] J4",
+                    "pos": {
+                        "x": 54.86,
+                        "y": 88.64
+                    },
+                    "uuid": "bcc22908-79fe-4ef2-9cf4-57202de60a7e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "2 上 [/GND] 的焊盤 R22 F.Cu",
+                    "pos": {
+                        "x": 85.0,
+                        "y": 50.0
+                    },
+                    "uuid": "daeb93dc-def4-4635-a35a-7304fa5e5bd8"
+                },
+                {
+                    "description": "2 上 [/GND] 的焊盤 R23 F.Cu",
+                    "pos": {
+                        "x": 85.0,
+                        "y": 53.0
+                    },
+                    "uuid": "be8f25f3-8ea6-4448-8b9c-887c51483a4f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "2 上 [/GND] 的焊盤 R23 F.Cu",
+                    "pos": {
+                        "x": 85.0,
+                        "y": 53.0
+                    },
+                    "uuid": "be8f25f3-8ea6-4448-8b9c-887c51483a4f"
+                },
+                {
+                    "description": "2 上 [/GND] 的焊盤 R24 F.Cu",
+                    "pos": {
+                        "x": 85.0,
+                        "y": 56.0
+                    },
+                    "uuid": "f8bc335a-3ca0-4afc-9dd0-aebb1ebefabf"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "2 上 [/GND] 的焊盤 R23 F.Cu",
+                    "pos": {
+                        "x": 85.0,
+                        "y": 53.0
+                    },
+                    "uuid": "be8f25f3-8ea6-4448-8b9c-887c51483a4f"
+                },
+                {
+                    "description": "12 上 [/GND] 的焊盤 U2 F.Cu",
+                    "pos": {
+                        "x": 103.075,
+                        "y": 53.13
+                    },
+                    "uuid": "a3c3fe8d-0cc9-40ce-8236-d4bd1b1247d6"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "2 上 [/GND] 的焊盤 R25 F.Cu",
+                    "pos": {
+                        "x": 85.0,
+                        "y": 59.0
+                    },
+                    "uuid": "c18220df-5fdf-4eed-b69e-33069f49e323"
+                },
+                {
+                    "description": "2 上 [/GND] 的焊盤 R24 F.Cu",
+                    "pos": {
+                        "x": 85.0,
+                        "y": 56.0
+                    },
+                    "uuid": "f8bc335a-3ca0-4afc-9dd0-aebb1ebefabf"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "2 上 [/GND] 的焊盤 R26 F.Cu",
+                    "pos": {
+                        "x": 85.0,
+                        "y": 62.0
+                    },
+                    "uuid": "b6148fcb-367d-48f0-bc83-db26633caf9e"
+                },
+                {
+                    "description": "2 上 [/GND] 的焊盤 R25 F.Cu",
+                    "pos": {
+                        "x": 85.0,
+                        "y": 59.0
+                    },
+                    "uuid": "c18220df-5fdf-4eed-b69e-33069f49e323"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "2 上 [/GND] 的焊盤 R26 F.Cu",
+                    "pos": {
+                        "x": 85.0,
+                        "y": 62.0
+                    },
+                    "uuid": "b6148fcb-367d-48f0-bc83-db26633caf9e"
+                },
+                {
+                    "description": "1 上 [/GND] 的焊盤 TP3 F.Cu",
+                    "pos": {
+                        "x": 70.0,
+                        "y": 92.0
+                    },
+                    "uuid": "95bab59f-2ff0-4197-ae46-c25c1553547e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "3 的非金屬化焊盤 [/GND] J8",
+                    "pos": {
+                        "x": 87.08,
+                        "y": 29.0
+                    },
+                    "uuid": "2944d301-10c5-40c9-98d1-20a7e8c09768"
+                },
+                {
+                    "description": "3 的非金屬化焊盤 [/GND] J9",
+                    "pos": {
+                        "x": 99.08,
+                        "y": 29.0
+                    },
+                    "uuid": "cee42a41-cab6-4020-9456-d0a7d6a3262e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "3 的非金屬化焊盤 [/GND] J8",
+                    "pos": {
+                        "x": 87.08,
+                        "y": 29.0
+                    },
+                    "uuid": "2944d301-10c5-40c9-98d1-20a7e8c09768"
+                },
+                {
+                    "description": "1 的非金屬化焊盤 [/GND] J7",
+                    "pos": {
+                        "x": 69.85,
+                        "y": 25.4
+                    },
+                    "uuid": "d8b47803-d1da-4309-99a4-c372e6aefe2e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "3 的非金屬化焊盤 [/GND] J8",
+                    "pos": {
+                        "x": 87.08,
+                        "y": 29.0
+                    },
+                    "uuid": "2944d301-10c5-40c9-98d1-20a7e8c09768"
+                },
+                {
+                    "description": "2 上 [/GND] 的焊盤 R22 F.Cu",
+                    "pos": {
+                        "x": 85.0,
+                        "y": 50.0
+                    },
+                    "uuid": "daeb93dc-def4-4635-a35a-7304fa5e5bd8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "3 的非金屬化焊盤 [/GND] J9",
+                    "pos": {
+                        "x": 99.08,
+                        "y": 29.0
+                    },
+                    "uuid": "cee42a41-cab6-4020-9456-d0a7d6a3262e"
+                },
+                {
+                    "description": "2 上 [/GND] 的焊盤 SW1 F.Cu",
+                    "pos": {
+                        "x": 102.925,
+                        "y": 29.075
+                    },
+                    "uuid": "1d59ce7e-f885-4d5c-ab2b-ded04b354352"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "2 上 [/GND] 的焊盤 SW1 F.Cu",
+                    "pos": {
+                        "x": 107.075,
+                        "y": 29.075
+                    },
+                    "uuid": "f7918ca3-f004-4bb4-81fd-7686b2466508"
+                },
+                {
+                    "description": "2 上 [/GND] 的焊盤 SW1 F.Cu",
+                    "pos": {
+                        "x": 102.925,
+                        "y": 29.075
+                    },
+                    "uuid": "1d59ce7e-f885-4d5c-ab2b-ded04b354352"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "27 上 [/GND] 的焊盤 U2 F.Cu",
+                    "pos": {
+                        "x": 109.575,
+                        "y": 58.87
+                    },
+                    "uuid": "2cf69873-e4d6-43ad-b8ee-3f7a8e9c3920"
+                },
+                {
+                    "description": "2 上 [/GND] 的焊盤 C5 F.Cu",
+                    "pos": {
+                        "x": 113.2,
+                        "y": 55.7625
+                    },
+                    "uuid": "bd4354ab-686a-4690-9820-a702a9d27a9d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "27 上 [/GND] 的焊盤 U2 F.Cu",
+                    "pos": {
+                        "x": 109.575,
+                        "y": 58.87
+                    },
+                    "uuid": "2cf69873-e4d6-43ad-b8ee-3f7a8e9c3920"
+                },
+                {
+                    "description": "12 上 [/GND] 的焊盤 U2 F.Cu",
+                    "pos": {
+                        "x": 103.075,
+                        "y": 53.13
+                    },
+                    "uuid": "a3c3fe8d-0cc9-40ce-8236-d4bd1b1247d6"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "2 上 [/GND] 的焊盤 C4 F.Cu",
+                    "pos": {
+                        "x": 113.2,
+                        "y": 52.6375
+                    },
+                    "uuid": "cf7ac4a2-ab93-43ba-b53a-4205bb19d599"
+                },
+                {
+                    "description": "2 上 [/GND] 的焊盤 C5 F.Cu",
+                    "pos": {
+                        "x": 113.2,
+                        "y": 55.7625
+                    },
+                    "uuid": "bd4354ab-686a-4690-9820-a702a9d27a9d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "2 上 [/GND] 的焊盤 R29 F.Cu",
+                    "pos": {
+                        "x": 122.0,
+                        "y": 53.0
+                    },
+                    "uuid": "df609f4f-f93c-4091-b59c-48e970f98510"
+                },
+                {
+                    "description": "2 上 [/GND] 的焊盤 C4 F.Cu",
+                    "pos": {
+                        "x": 113.2,
+                        "y": 52.6375
+                    },
+                    "uuid": "cf7ac4a2-ab93-43ba-b53a-4205bb19d599"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "1 上 [/GND] 的焊盤 U1 F.Cu",
+                    "pos": {
+                        "x": 123.85,
+                        "y": 82.0
+                    },
+                    "uuid": "40fd6d1d-d32f-4b3f-8c7a-1188fdaf7d24"
+                },
+                {
+                    "description": "3 上 [/GND] 的焊盤 U1 F.Cu",
+                    "pos": {
+                        "x": 123.85,
+                        "y": 83.0
+                    },
+                    "uuid": "8d83b39f-ae4d-49be-b0c9-4f1064e565f1"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "1 上 [/GND] 的焊盤 U1 F.Cu",
+                    "pos": {
+                        "x": 123.85,
+                        "y": 82.0
+                    },
+                    "uuid": "40fd6d1d-d32f-4b3f-8c7a-1188fdaf7d24"
+                },
+                {
+                    "description": "27 上 [/GND] 的焊盤 U2 F.Cu",
+                    "pos": {
+                        "x": 109.575,
+                        "y": 58.87
+                    },
+                    "uuid": "2cf69873-e4d6-43ad-b8ee-3f7a8e9c3920"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "3 上 [/GND] 的焊盤 U1 F.Cu",
+                    "pos": {
+                        "x": 123.85,
+                        "y": 83.0
+                    },
+                    "uuid": "8d83b39f-ae4d-49be-b0c9-4f1064e565f1"
+                },
+                {
+                    "description": "2 上 [/GND] 的焊盤 C2 F.Cu",
+                    "pos": {
+                        "x": 131.0,
+                        "y": 83.1375
+                    },
+                    "uuid": "e66f1f69-ecd5-44ab-8ddb-59c876fc7da1"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "2 上 [/GND] 的焊盤 C3 F.Cu",
+                    "pos": {
+                        "x": 131.0,
+                        "y": 87.9625
+                    },
+                    "uuid": "daad2f28-514e-4321-bb5e-594c6e2c509f"
+                },
+                {
+                    "description": "2 上 [/GND] 的焊盤 C2 F.Cu",
+                    "pos": {
+                        "x": 131.0,
+                        "y": 83.1375
+                    },
+                    "uuid": "e66f1f69-ecd5-44ab-8ddb-59c876fc7da1"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "2 上 [/Q_SHORT_GATE] 的焊盤 R28 F.Cu",
+                    "pos": {
+                        "x": 122.0,
+                        "y": 50.0
+                    },
+                    "uuid": "913e6b98-ebdb-4431-bd70-7667dcb07647"
+                },
+                {
+                    "description": "1 上 [/Q_SHORT_GATE] 的焊盤 R29 F.Cu",
+                    "pos": {
+                        "x": 120.0,
+                        "y": 53.0
+                    },
+                    "uuid": "203b146d-2b6a-4e2a-806e-1add154c26ff"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "1 上 [/Q_SHORT_GATE] 的焊盤 Q1 F.Cu",
+                    "pos": {
+                        "x": 125.0625,
+                        "y": 50.05
+                    },
+                    "uuid": "e4e1fbd5-2309-4159-a45f-5b9051c87987"
+                },
+                {
+                    "description": "2 上 [/Q_SHORT_GATE] 的焊盤 R28 F.Cu",
+                    "pos": {
+                        "x": 122.0,
+                        "y": 50.0
+                    },
+                    "uuid": "913e6b98-ebdb-4431-bd70-7667dcb07647"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走線 [/DUT_FORCE_P] (F.Cu), 長度: 4.3000 mm",
+                    "pos": {
+                        "x": 111.5,
+                        "y": 39.95
+                    },
+                    "uuid": "ab64c868-c965-4274-9337-bae4ba2d6939"
+                },
+                {
+                    "description": "1 上 [/DUT_FORCE_P] 的焊盤 TP4 F.Cu",
+                    "pos": {
+                        "x": 114.0,
+                        "y": 25.0
+                    },
+                    "uuid": "4825e994-4e55-4996-9f88-9939abcbf611"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走線 [/DUT_FORCE_P] (F.Cu), 長度: 4.3000 mm",
+                    "pos": {
+                        "x": 115.8,
+                        "y": 39.95
+                    },
+                    "uuid": "10caa2ec-2f87-41b3-beb5-96a0ba9c0e3e"
+                },
+                {
+                    "description": "3 上 [/DUT_FORCE_P] 的焊盤 Q1 F.Cu",
+                    "pos": {
+                        "x": 126.9375,
+                        "y": 51.0
+                    },
+                    "uuid": "d98e0ef6-47a6-4ca1-a00d-259688817726"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "1 上 [/DUT_FORCE_P] 的焊盤 JP2 F.Cu",
+                    "pos": {
+                        "x": 126.0,
+                        "y": 34.725
+                    },
+                    "uuid": "8c54b08e-6373-4cf6-9107-8c7481b4ce5a"
+                },
+                {
+                    "description": "走線 [/DUT_FORCE_P] (F.Cu), 長度: 4.3000 mm",
+                    "pos": {
+                        "x": 115.8,
+                        "y": 39.95
+                    },
+                    "uuid": "10caa2ec-2f87-41b3-beb5-96a0ba9c0e3e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "3 上 [/DUT_FORCE_P] 的焊盤 Q1 F.Cu",
+                    "pos": {
+                        "x": 126.9375,
+                        "y": 51.0
+                    },
+                    "uuid": "d98e0ef6-47a6-4ca1-a00d-259688817726"
+                },
+                {
+                    "description": "1 的非金屬化焊盤 [/DUT_FORCE_P] J5",
+                    "pos": {
+                        "x": 134.0,
+                        "y": 48.0
+                    },
+                    "uuid": "086e9713-c067-45bc-ac6b-83c60b75470f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "3 上 [/DUT_FORCE_P] 的焊盤 Q1 F.Cu",
+                    "pos": {
+                        "x": 126.9375,
+                        "y": 51.0
+                    },
+                    "uuid": "d98e0ef6-47a6-4ca1-a00d-259688817726"
+                },
+                {
+                    "description": "走線 [/DUT_FORCE_P] (F.Cu), 長度: 4.3000 mm",
+                    "pos": {
+                        "x": 115.8,
+                        "y": 72.05
+                    },
+                    "uuid": "94153f0b-e0e6-40d0-b9ec-6c9303ff3e16"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "8 的非金屬化焊盤 [/+5V_USB] J4",
+                    "pos": {
+                        "x": 54.86,
+                        "y": 91.18
+                    },
+                    "uuid": "5e3bbb42-8516-4854-8650-456fa672a6b3"
+                },
+                {
+                    "description": "1 上 [/+5V_USB] 的焊盤 TP1 F.Cu",
+                    "pos": {
+                        "x": 62.0,
+                        "y": 92.0
+                    },
+                    "uuid": "5d53547c-6356-4c20-99a2-daab2796206c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "1 上 [/+5V_USB] 的焊盤 TP1 F.Cu",
+                    "pos": {
+                        "x": 62.0,
+                        "y": 92.0
+                    },
+                    "uuid": "5d53547c-6356-4c20-99a2-daab2796206c"
+                },
+                {
+                    "description": "1 上 [/+5V_USB] 的焊盤 C5 F.Cu",
+                    "pos": {
+                        "x": 113.2,
+                        "y": 57.8375
+                    },
+                    "uuid": "7ff98a24-900c-48a2-9963-d9ba53907844"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "1 上 [/+5V_USB] 的焊盤 C4 F.Cu",
+                    "pos": {
+                        "x": 113.2,
+                        "y": 54.3625
+                    },
+                    "uuid": "03eed04b-bec9-4250-bebc-a921787fbb5c"
+                },
+                {
+                    "description": "1 上 [/+5V_USB] 的焊盤 U2 F.Cu",
+                    "pos": {
+                        "x": 110.225,
+                        "y": 53.13
+                    },
+                    "uuid": "8d4ee577-eb96-4ba7-9bef-2fa9c8ecf9a8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "1 上 [/+5V_USB] 的焊盤 C5 F.Cu",
+                    "pos": {
+                        "x": 113.2,
+                        "y": 57.8375
+                    },
+                    "uuid": "7ff98a24-900c-48a2-9963-d9ba53907844"
+                },
+                {
+                    "description": "1 上 [/+5V_USB] 的焊盤 C4 F.Cu",
+                    "pos": {
+                        "x": 113.2,
+                        "y": 54.3625
+                    },
+                    "uuid": "03eed04b-bec9-4250-bebc-a921787fbb5c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "2 上 [/DUT_FORCE_N] 的焊盤 JP4 F.Cu",
+                    "pos": {
+                        "x": 124.65,
+                        "y": 63.0
+                    },
+                    "uuid": "17dad22b-9108-478d-8aca-d7535db3cf42"
+                },
+                {
+                    "description": "4 上 [/DUT_FORCE_N] 的焊盤 R27 F.Cu",
+                    "pos": {
+                        "x": 121.985,
+                        "y": 59.635
+                    },
+                    "uuid": "af668408-0d14-4324-8c8f-e068b7f8ce49"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "2 上 [/DUT_FORCE_N] 的焊盤 JP4 F.Cu",
+                    "pos": {
+                        "x": 124.65,
+                        "y": 63.0
+                    },
+                    "uuid": "17dad22b-9108-478d-8aca-d7535db3cf42"
+                },
+                {
+                    "description": "2 上 [/DUT_FORCE_N] 的焊盤 JP3 F.Cu",
+                    "pos": {
+                        "x": 128.0,
+                        "y": 69.275
+                    },
+                    "uuid": "d4f68452-663e-4d0e-8c54-d6951bf8d02b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "2 上 [/DUT_FORCE_N] 的焊盤 JP3 F.Cu",
+                    "pos": {
+                        "x": 128.0,
+                        "y": 69.275
+                    },
+                    "uuid": "d4f68452-663e-4d0e-8c54-d6951bf8d02b"
+                },
+                {
+                    "description": "1 上 [/DUT_FORCE_N] 的焊盤 TP5 F.Cu",
+                    "pos": {
+                        "x": 131.0,
+                        "y": 72.0
+                    },
+                    "uuid": "eda8fe13-5172-457d-9be7-6da81322ac7f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "1 上 [/LOAD_RETURN_PRE_SHUNT] 的焊盤 R27 F.Cu",
+                    "pos": {
+                        "x": 116.015,
+                        "y": 58.365
+                    },
+                    "uuid": "e3cb9a0b-7bbc-4dd2-b077-9629864b9e21"
+                },
+                {
+                    "description": "1 上 [/LOAD_RETURN_PRE_SHUNT] 的焊盤 JP4 F.Cu",
+                    "pos": {
+                        "x": 123.35,
+                        "y": 63.0
+                    },
+                    "uuid": "56003a28-0470-4b78-97ca-a0396aa997d9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "1 上 [/LOAD_RETURN_PRE_SHUNT] 的焊盤 R27 F.Cu",
+                    "pos": {
+                        "x": 116.015,
+                        "y": 58.365
+                    },
+                    "uuid": "e3cb9a0b-7bbc-4dd2-b077-9629864b9e21"
+                },
+                {
+                    "description": "2 上 [/LOAD_RETURN_PRE_SHUNT] 的焊盤 Q1 F.Cu",
+                    "pos": {
+                        "x": 125.0625,
+                        "y": 51.95
+                    },
+                    "uuid": "8217d16d-4466-40ac-afa6-7b895af6382a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "1 上 [/ADC_ISENSE_P] 的焊盤 TP10 F.Cu",
+                    "pos": {
+                        "x": 113.0,
+                        "y": 87.0
+                    },
+                    "uuid": "f6422f2a-d756-499d-b1b0-84d654b60559"
+                },
+                {
+                    "description": "走線 [/ADC_ISENSE_P] (F.Cu), 長度: 12.8000 mm",
+                    "pos": {
+                        "x": 125.07,
+                        "y": 68.07
+                    },
+                    "uuid": "72b7722b-f605-4123-9838-abeda33433e2"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "1 上 [/ADC_ISENSE_N] 的焊盤 TP11 F.Cu",
+                    "pos": {
+                        "x": 113.0,
+                        "y": 92.0
+                    },
+                    "uuid": "89a14cb3-fb8b-4ea4-97ba-571a1ae7dc6b"
+                },
+                {
+                    "description": "7 上 [/ADC_ISENSE_N] 的焊盤 U1 F.Cu",
+                    "pos": {
+                        "x": 128.15,
+                        "y": 83.5
+                    },
+                    "uuid": "94d5de5e-f0fe-48ed-af13-ffbd02ed7fc2"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "7 上 [/ADC_ISENSE_N] 的焊盤 U1 F.Cu",
+                    "pos": {
+                        "x": 128.15,
+                        "y": 83.5
+                    },
+                    "uuid": "94d5de5e-f0fe-48ed-af13-ffbd02ed7fc2"
+                },
+                {
+                    "description": "3 上 [/ADC_ISENSE_N] 的焊盤 R27 F.Cu",
+                    "pos": {
+                        "x": 122.43,
+                        "y": 57.73
+                    },
+                    "uuid": "e74c9818-2375-4495-8aeb-ce07218197b6"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "1 上 [/DUT_SENSE_P] 的焊盤 R1 F.Cu",
+                    "pos": {
+                        "x": 119.0,
+                        "y": 79.5
+                    },
+                    "uuid": "7ea21c5e-58d8-444d-843d-92c51f405753"
+                },
+                {
+                    "description": "2 的非金屬化焊盤 [/DUT_SENSE_P] J5",
+                    "pos": {
+                        "x": 134.0,
+                        "y": 43.0
+                    },
+                    "uuid": "0822180e-a306-4134-abb4-7aee3008ddeb"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "2 上 [/DUT_SENSE_P] 的焊盤 JP2 F.Cu",
+                    "pos": {
+                        "x": 126.0,
+                        "y": 33.275
+                    },
+                    "uuid": "874f9b50-9963-46b9-8b40-0303fc76af0f"
+                },
+                {
+                    "description": "1 上 [/DUT_SENSE_P] 的焊盤 TP6 F.Cu",
+                    "pos": {
+                        "x": 118.0,
+                        "y": 25.0
+                    },
+                    "uuid": "e4c549c3-d422-4c05-afaa-a9586afaec06"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "2 的非金屬化焊盤 [/DUT_SENSE_P] J5",
+                    "pos": {
+                        "x": 134.0,
+                        "y": 43.0
+                    },
+                    "uuid": "0822180e-a306-4134-abb4-7aee3008ddeb"
+                },
+                {
+                    "description": "2 上 [/DUT_SENSE_P] 的焊盤 JP2 F.Cu",
+                    "pos": {
+                        "x": 126.0,
+                        "y": 33.275
+                    },
+                    "uuid": "874f9b50-9963-46b9-8b40-0303fc76af0f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "1 的非金屬化焊盤 [/EPD_SRAM_CS_N] J3",
+                    "pos": {
+                        "x": 52.32,
+                        "y": 73.4
+                    },
+                    "uuid": "f9a1ed13-a472-4452-a345-912fd33eea4a"
+                },
+                {
+                    "description": "10 的非金屬化焊盤 [/EPD_SRAM_CS_N] J6",
+                    "pos": {
+                        "x": 66.86,
+                        "y": 29.0
+                    },
+                    "uuid": "71a3d92e-9a3e-4dfc-8b9d-e8d8414bc7d6"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "2 的非金屬化焊盤 [/EPD_CS_N] J3",
+                    "pos": {
+                        "x": 52.32,
+                        "y": 75.94
+                    },
+                    "uuid": "e14889be-49ab-4190-b6eb-3421fd05593b"
+                },
+                {
+                    "description": "6 的非金屬化焊盤 [/EPD_CS_N] J6",
+                    "pos": {
+                        "x": 56.7,
+                        "y": 29.0
+                    },
+                    "uuid": "c0b02ec3-6f45-451d-9cdd-69c99774ae24"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "3 的非金屬化焊盤 [/EPD_DC] J3",
+                    "pos": {
+                        "x": 52.32,
+                        "y": 78.48
+                    },
+                    "uuid": "807303ab-ca88-435e-ac8a-b4d24e7fb84d"
+                },
+                {
+                    "description": "7 的非金屬化焊盤 [/EPD_DC] J6",
+                    "pos": {
+                        "x": 59.24,
+                        "y": 29.0
+                    },
+                    "uuid": "2bd88c21-979d-41c2-aa77-321e5ac814d2"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "4 的非金屬化焊盤 [/EPD_BUSY] J3",
+                    "pos": {
+                        "x": 52.32,
+                        "y": 81.02
+                    },
+                    "uuid": "f4d16825-655e-4759-903e-d80823c989c8"
+                },
+                {
+                    "description": "9 的非金屬化焊盤 [/EPD_BUSY] J6",
+                    "pos": {
+                        "x": 64.32,
+                        "y": 29.0
+                    },
+                    "uuid": "50cadace-54ca-4d95-8fa0-ad05045ea417"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "1 上 [/MUX_A0] 的焊盤 TP13 F.Cu",
+                    "pos": {
+                        "x": 76.0,
+                        "y": 53.0
+                    },
+                    "uuid": "afacab68-02bb-43b8-9c6f-72da03fba45c"
+                },
+                {
+                    "description": "2 的非金屬化焊盤 [/MUX_A0] J1",
+                    "pos": {
+                        "x": 32.0,
+                        "y": 75.94
+                    },
+                    "uuid": "9c864538-641c-4940-a0bd-fbc78c6744f8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "1 上 [/MUX_A0] 的焊盤 R22 F.Cu",
+                    "pos": {
+                        "x": 83.0,
+                        "y": 50.0
+                    },
+                    "uuid": "0f20b566-3dba-4d06-a265-a91bf45152b1"
+                },
+                {
+                    "description": "1 上 [/MUX_A0] 的焊盤 TP13 F.Cu",
+                    "pos": {
+                        "x": 76.0,
+                        "y": 53.0
+                    },
+                    "uuid": "afacab68-02bb-43b8-9c6f-72da03fba45c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "17 上 [/MUX_A0] 的焊盤 U2 F.Cu",
+                    "pos": {
+                        "x": 103.075,
+                        "y": 58.87
+                    },
+                    "uuid": "732a2690-4797-43f9-ad3b-ac0197328922"
+                },
+                {
+                    "description": "1 上 [/MUX_A0] 的焊盤 R22 F.Cu",
+                    "pos": {
+                        "x": 83.0,
+                        "y": 50.0
+                    },
+                    "uuid": "0f20b566-3dba-4d06-a265-a91bf45152b1"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "1 上 [/MUX_A2] 的焊盤 TP15 F.Cu",
+                    "pos": {
+                        "x": 76.0,
+                        "y": 59.0
+                    },
+                    "uuid": "761cbc62-ffa1-44dc-8b89-db838adef489"
+                },
+                {
+                    "description": "3 的非金屬化焊盤 [/MUX_A2] J1",
+                    "pos": {
+                        "x": 32.0,
+                        "y": 78.48
+                    },
+                    "uuid": "8dc2d631-40e2-470c-a6e9-16597c1133a8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "1 上 [/MUX_A2] 的焊盤 R24 F.Cu",
+                    "pos": {
+                        "x": 83.0,
+                        "y": 56.0
+                    },
+                    "uuid": "723dd097-6d41-4c8a-af0d-e78082b795fb"
+                },
+                {
+                    "description": "1 上 [/MUX_A2] 的焊盤 TP15 F.Cu",
+                    "pos": {
+                        "x": 76.0,
+                        "y": 59.0
+                    },
+                    "uuid": "761cbc62-ffa1-44dc-8b89-db838adef489"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "15 上 [/MUX_A2] 的焊盤 U2 F.Cu",
+                    "pos": {
+                        "x": 101.775,
+                        "y": 58.87
+                    },
+                    "uuid": "ab7e20fa-ebfa-4cd1-9c41-4b00e9a48252"
+                },
+                {
+                    "description": "1 上 [/MUX_A2] 的焊盤 R24 F.Cu",
+                    "pos": {
+                        "x": 83.0,
+                        "y": 56.0
+                    },
+                    "uuid": "723dd097-6d41-4c8a-af0d-e78082b795fb"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "4 的非金屬化焊盤 [/EPD_SCLK] J1",
+                    "pos": {
+                        "x": 32.0,
+                        "y": 81.02
+                    },
+                    "uuid": "0d70c87b-037d-4d60-b289-17b1efb41ccc"
+                },
+                {
+                    "description": "3 的非金屬化焊盤 [/EPD_SCLK] J6",
+                    "pos": {
+                        "x": 49.08,
+                        "y": 29.0
+                    },
+                    "uuid": "47df4a54-294b-4d0f-8fa5-380eb952397b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "5 的非金屬化焊盤 [/EPD_MISO] J1",
+                    "pos": {
+                        "x": 32.0,
+                        "y": 83.56
+                    },
+                    "uuid": "9bcf02f2-6f74-41b8-8fb8-9ad76788a30e"
+                },
+                {
+                    "description": "5 的非金屬化焊盤 [/EPD_MISO] J6",
+                    "pos": {
+                        "x": 54.16,
+                        "y": 29.0
+                    },
+                    "uuid": "296c722a-e4f7-4860-8a24-9c651008f5ef"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "6 的非金屬化焊盤 [/EPD_MOSI] J1",
+                    "pos": {
+                        "x": 32.0,
+                        "y": 86.1
+                    },
+                    "uuid": "1c6fa6bb-30da-4930-ab7a-5320edd8e869"
+                },
+                {
+                    "description": "4 的非金屬化焊盤 [/EPD_MOSI] J6",
+                    "pos": {
+                        "x": 51.62,
+                        "y": 29.0
+                    },
+                    "uuid": "93ac41fc-1b62-460c-a5cf-edfc47218f93"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "7 的非金屬化焊盤 [/EPD_RST_N] J1",
+                    "pos": {
+                        "x": 32.0,
+                        "y": 88.64
+                    },
+                    "uuid": "601634ce-2412-4ab1-ab29-65caf1e8dd40"
+                },
+                {
+                    "description": "8 的非金屬化焊盤 [/EPD_RST_N] J6",
+                    "pos": {
+                        "x": 61.78,
+                        "y": 29.0
+                    },
+                    "uuid": "712c2333-f748-472f-8da9-16706db3fe42"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走線 [/ADC_VN] (F.Cu), 長度: 1.1500 mm",
+                    "pos": {
+                        "x": 122.7,
+                        "y": 84.0
+                    },
+                    "uuid": "2c356bbc-797d-4136-8e4e-6c215400406e"
+                },
+                {
+                    "description": "2 上 [/ADC_VN] 的焊盤 C1 F.Cu",
+                    "pos": {
+                        "x": 124.8625,
+                        "y": 89.0
+                    },
+                    "uuid": "19cbc20e-ca92-460f-b874-8756732b4394"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "1 上 [/ADC_VN] 的焊盤 TP9 F.Cu",
+                    "pos": {
+                        "x": 135.0,
+                        "y": 82.0
+                    },
+                    "uuid": "1a87532b-7a92-4778-bd81-434dd2c661c1"
+                },
+                {
+                    "description": "走線 [/ADC_VN] (F.Cu), 長度: 1.1500 mm",
+                    "pos": {
+                        "x": 122.7,
+                        "y": 84.0
+                    },
+                    "uuid": "2c356bbc-797d-4136-8e4e-6c215400406e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "1 上 [/ADC_VP] 的焊盤 R3 F.Cu",
+                    "pos": {
+                        "x": 119.0,
+                        "y": 86.5
+                    },
+                    "uuid": "70f22d62-e030-4b0f-97a9-b31845283874"
+                },
+                {
+                    "description": "1 上 [/ADC_VP] 的焊盤 C1 F.Cu",
+                    "pos": {
+                        "x": 123.1375,
+                        "y": 89.0
+                    },
+                    "uuid": "86f1eef0-8b23-4039-ac08-6f20a7cb3952"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "1 上 [/ADC_VP] 的焊盤 R3 F.Cu",
+                    "pos": {
+                        "x": 119.0,
+                        "y": 86.5
+                    },
+                    "uuid": "70f22d62-e030-4b0f-97a9-b31845283874"
+                },
+                {
+                    "description": "走線 [/ADC_VP] (F.Cu), 長度: 0.4000 mm",
+                    "pos": {
+                        "x": 122.7,
+                        "y": 82.9
+                    },
+                    "uuid": "ffbdf40c-f62b-4067-83f7-ad377a11d436"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走線 [/ADC_VP] (F.Cu), 長度: 0.9500 mm",
+                    "pos": {
+                        "x": 122.9,
+                        "y": 83.5
+                    },
+                    "uuid": "3f1292b2-4b5c-4fd8-a789-aa433fc1d697"
+                },
+                {
+                    "description": "1 上 [/ADC_VP] 的焊盤 TP8 F.Cu",
+                    "pos": {
+                        "x": 135.0,
+                        "y": 78.0
+                    },
+                    "uuid": "7175fabb-38c3-47ab-a087-4c8571d76c1d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "1 上 [/BUTTON_N] 的焊盤 SW1 F.Cu",
+                    "pos": {
+                        "x": 102.925,
+                        "y": 26.925
+                    },
+                    "uuid": "f005ad6c-b306-48e3-aed5-26eeda091736"
+                },
+                {
+                    "description": "4 的非金屬化焊盤 [/BUTTON_N] J4",
+                    "pos": {
+                        "x": 54.86,
+                        "y": 81.02
+                    },
+                    "uuid": "1e9dab60-899f-4ddc-8104-e7b8d19371cd"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "1 上 [/BUTTON_N] 的焊盤 SW1 F.Cu",
+                    "pos": {
+                        "x": 107.075,
+                        "y": 26.925
+                    },
+                    "uuid": "e0e73480-beb4-450b-9844-ab169d42447c"
+                },
+                {
+                    "description": "1 上 [/BUTTON_N] 的焊盤 SW1 F.Cu",
+                    "pos": {
+                        "x": 102.925,
+                        "y": 26.925
+                    },
+                    "uuid": "f005ad6c-b306-48e3-aed5-26eeda091736"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "5 的非金屬化焊盤 [/POT_X_WIPER] J4",
+                    "pos": {
+                        "x": 54.86,
+                        "y": 83.56
+                    },
+                    "uuid": "89cbaec6-904b-496c-a4fe-f874cc076700"
+                },
+                {
+                    "description": "2 的非金屬化焊盤 [/POT_X_WIPER] J8",
+                    "pos": {
+                        "x": 84.54,
+                        "y": 29.0
+                    },
+                    "uuid": "2cd0e521-096d-44bb-824e-658982826788"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "6 的非金屬化焊盤 [/POT_Y_WIPER] J4",
+                    "pos": {
+                        "x": 54.86,
+                        "y": 86.1
+                    },
+                    "uuid": "e2e18237-dd89-4172-9dcb-f3bf7fc2c4b6"
+                },
+                {
+                    "description": "2 的非金屬化焊盤 [/POT_Y_WIPER] J9",
+                    "pos": {
+                        "x": 96.54,
+                        "y": 29.0
+                    },
+                    "uuid": "b7d115b1-9fa2-459f-9f45-77f53581d5be"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "1 上 [/DUT_SENSE_N] 的焊盤 R2 F.Cu",
+                    "pos": {
+                        "x": 119.0,
+                        "y": 83.0
+                    },
+                    "uuid": "1af4928b-a9b2-4479-b18a-bf0c9daa490f"
+                },
+                {
+                    "description": "2 上 [/DUT_SENSE_N] 的焊盤 R3 F.Cu",
+                    "pos": {
+                        "x": 121.0,
+                        "y": 86.5
+                    },
+                    "uuid": "ebff251d-082c-4c7b-97d6-b1a0d36b2550"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "1 上 [/DUT_SENSE_N] 的焊盤 JP3 F.Cu",
+                    "pos": {
+                        "x": 128.0,
+                        "y": 70.725
+                    },
+                    "uuid": "b9c2c81c-e2fe-4966-8ead-5fb1cc5e9837"
+                },
+                {
+                    "description": "1 上 [/DUT_SENSE_N] 的焊盤 R2 F.Cu",
+                    "pos": {
+                        "x": 119.0,
+                        "y": 83.0
+                    },
+                    "uuid": "1af4928b-a9b2-4479-b18a-bf0c9daa490f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "3 的非金屬化焊盤 [/DUT_SENSE_N] J5",
+                    "pos": {
+                        "x": 134.0,
+                        "y": 38.0
+                    },
+                    "uuid": "b6288532-ace3-484e-88e5-6f2e40c2bae0"
+                },
+                {
+                    "description": "1 上 [/DUT_SENSE_N] 的焊盤 JP3 F.Cu",
+                    "pos": {
+                        "x": 128.0,
+                        "y": 70.725
+                    },
+                    "uuid": "b9c2c81c-e2fe-4966-8ead-5fb1cc5e9837"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "1 上 [/DUT_SENSE_N] 的焊盤 TP7 F.Cu",
+                    "pos": {
+                        "x": 135.0,
+                        "y": 72.0
+                    },
+                    "uuid": "213c6641-5155-4ca6-9a34-06542c7a2c3e"
+                },
+                {
+                    "description": "1 上 [/DUT_SENSE_N] 的焊盤 JP3 F.Cu",
+                    "pos": {
+                        "x": 128.0,
+                        "y": 70.725
+                    },
+                    "uuid": "b9c2c81c-e2fe-4966-8ead-5fb1cc5e9837"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "封裝 J2",
+                    "pos": {
+                        "x": 34.54,
+                        "y": 73.4
+                    },
+                    "uuid": "003ab185-00ed-4464-8d00-81ac9d9b9a76"
+                },
+                {
+                    "description": "封裝 J1",
+                    "pos": {
+                        "x": 32.0,
+                        "y": 73.4
+                    },
+                    "uuid": "4d17eb67-b97e-46a1-8109-3e2c34a419da"
+                }
+            ],
+            "severity": "warning",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "封裝 J3",
+                    "pos": {
+                        "x": 52.32,
+                        "y": 73.4
+                    },
+                    "uuid": "49068a72-1a4f-4eac-afc8-410fae1f0256"
+                },
+                {
+                    "description": "封裝 J4",
+                    "pos": {
+                        "x": 54.86,
+                        "y": 73.4
+                    },
+                    "uuid": "7fed617e-f348-4865-8503-56427eeb6a02"
+                }
+            ],
+            "severity": "warning",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "封裝 C5",
+                    "pos": {
+                        "x": 113.2,
+                        "y": 56.8
+                    },
+                    "uuid": "4d3ca379-2a30-46aa-91ed-731fedb03a54"
+                },
+                {
+                    "description": "封裝 C4",
+                    "pos": {
+                        "x": 113.2,
+                        "y": 53.5
+                    },
+                    "uuid": "e522e08c-374c-4460-b6d5-62ef11050995"
+                }
+            ],
+            "severity": "warning",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "目前的配置不包含封裝庫「ivcurve_v2」",
+            "items": [
+                {
+                    "description": "封裝 U2",
+                    "pos": {
+                        "x": 106.0,
+                        "y": 56.0
+                    },
+                    "uuid": "c77df2ce-c8a8-4e8a-af26-42cb2af6f34d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "F.Silkscreen 上的 線段 J3",
+                    "pos": {
+                        "x": 50.99,
+                        "y": 74.67
+                    },
+                    "uuid": "7ac06ff9-2a81-4aa5-b4b5-0308cada95ef"
+                },
+                {
+                    "description": "F.Silkscreen 上的 線段 J4",
+                    "pos": {
+                        "x": 53.53,
+                        "y": 74.67
+                    },
+                    "uuid": "f446843a-1420-4d3c-9e58-edde9d8ee9cf"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "F.Silkscreen 上的 線段 J3",
+                    "pos": {
+                        "x": 50.99,
+                        "y": 74.67
+                    },
+                    "uuid": "7ac06ff9-2a81-4aa5-b4b5-0308cada95ef"
+                },
+                {
+                    "description": "F.Silkscreen 上的 線段 J4",
+                    "pos": {
+                        "x": 53.53,
+                        "y": 74.67
+                    },
+                    "uuid": "99d8b143-5abd-40a9-9eeb-32744a89848b"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "F.Silkscreen 上的 線段 J3",
+                    "pos": {
+                        "x": 50.99,
+                        "y": 92.51
+                    },
+                    "uuid": "480f7fb9-0563-48b6-8d4e-bcb982b0d4b1"
+                },
+                {
+                    "description": "F.Silkscreen 上的 線段 J4",
+                    "pos": {
+                        "x": 53.53,
+                        "y": 74.67
+                    },
+                    "uuid": "f446843a-1420-4d3c-9e58-edde9d8ee9cf"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "F.Silkscreen 上的 線段 J3",
+                    "pos": {
+                        "x": 50.99,
+                        "y": 92.51
+                    },
+                    "uuid": "480f7fb9-0563-48b6-8d4e-bcb982b0d4b1"
+                },
+                {
+                    "description": "F.Silkscreen 上的 線段 J4",
+                    "pos": {
+                        "x": 53.53,
+                        "y": 92.51
+                    },
+                    "uuid": "cde614cd-6259-4428-bb5d-1b519f19655b"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "F.Silkscreen 上的 線段 J4",
+                    "pos": {
+                        "x": 53.53,
+                        "y": 74.67
+                    },
+                    "uuid": "99d8b143-5abd-40a9-9eeb-32744a89848b"
+                },
+                {
+                    "description": "F.Silkscreen 上的 線段 J3",
+                    "pos": {
+                        "x": 53.65,
+                        "y": 74.67
+                    },
+                    "uuid": "ba592c58-3ce7-4be1-a95b-814cb6024729"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "F.Silkscreen 上的 線段 J3",
+                    "pos": {
+                        "x": 53.65,
+                        "y": 74.67
+                    },
+                    "uuid": "ba592c58-3ce7-4be1-a95b-814cb6024729"
+                },
+                {
+                    "description": "F.Silkscreen 上的 線段 J4",
+                    "pos": {
+                        "x": 53.53,
+                        "y": 92.51
+                    },
+                    "uuid": "cde614cd-6259-4428-bb5d-1b519f19655b"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "F.Silkscreen 上的 線段 J1",
+                    "pos": {
+                        "x": 30.67,
+                        "y": 74.67
+                    },
+                    "uuid": "3c3e093a-c37f-4f86-883b-5071b5d6c884"
+                },
+                {
+                    "description": "F.Silkscreen 上的 線段 J2",
+                    "pos": {
+                        "x": 33.21,
+                        "y": 74.67
+                    },
+                    "uuid": "665fc5f8-dc69-451e-8973-e873a301402e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "F.Silkscreen 上的 線段 J2",
+                    "pos": {
+                        "x": 33.21,
+                        "y": 74.67
+                    },
+                    "uuid": "665fc5f8-dc69-451e-8973-e873a301402e"
+                },
+                {
+                    "description": "F.Silkscreen 上的 線段 J1",
+                    "pos": {
+                        "x": 33.33,
+                        "y": 74.67
+                    },
+                    "uuid": "bb4473d3-2611-4146-98f5-8cbdec076616"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "F.Silkscreen 上的 線段 J1",
+                    "pos": {
+                        "x": 30.67,
+                        "y": 74.67
+                    },
+                    "uuid": "3c3e093a-c37f-4f86-883b-5071b5d6c884"
+                },
+                {
+                    "description": "F.Silkscreen 上的 線段 J2",
+                    "pos": {
+                        "x": 33.21,
+                        "y": 74.67
+                    },
+                    "uuid": "8c45ec2c-545d-4f12-ba27-cfe7ffa6ea59"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "F.Silkscreen 上的 線段 J2",
+                    "pos": {
+                        "x": 33.21,
+                        "y": 74.67
+                    },
+                    "uuid": "8c45ec2c-545d-4f12-ba27-cfe7ffa6ea59"
+                },
+                {
+                    "description": "F.Silkscreen 上的 線段 J1",
+                    "pos": {
+                        "x": 30.67,
+                        "y": 92.51
+                    },
+                    "uuid": "ce9d0265-ee6b-4c73-bcf4-25746c38b44e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "F.Silkscreen 上的 線段 J2",
+                    "pos": {
+                        "x": 33.21,
+                        "y": 92.51
+                    },
+                    "uuid": "3ec1ae05-9458-47d1-8c9d-5c891a8500df"
+                },
+                {
+                    "description": "F.Silkscreen 上的 線段 J1",
+                    "pos": {
+                        "x": 30.67,
+                        "y": 92.51
+                    },
+                    "uuid": "ce9d0265-ee6b-4c73-bcf4-25746c38b44e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "F.Silkscreen 上的 線段 J2",
+                    "pos": {
+                        "x": 33.21,
+                        "y": 92.51
+                    },
+                    "uuid": "3ec1ae05-9458-47d1-8c9d-5c891a8500df"
+                },
+                {
+                    "description": "F.Silkscreen 上的 線段 J1",
+                    "pos": {
+                        "x": 33.33,
+                        "y": 74.67
+                    },
+                    "uuid": "bb4473d3-2611-4146-98f5-8cbdec076616"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "R16 的參考欄位",
+                    "pos": {
+                        "x": 101.23,
+                        "y": 43.0
+                    },
+                    "uuid": "26334584-9fc2-47a3-a877-384b27b7a95f"
+                },
+                {
+                    "description": "F.Silkscreen 上的 線段 R17",
+                    "pos": {
+                        "x": 101.19,
+                        "y": 40.822936
+                    },
+                    "uuid": "f5b0b476-d5c1-4b7f-a1f0-2515ce395e5f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "R17 的參考欄位",
+                    "pos": {
+                        "x": 105.53,
+                        "y": 43.0
+                    },
+                    "uuid": "35011475-892d-4df7-8a59-a1868650e394"
+                },
+                {
+                    "description": "F.Silkscreen 上的 線段 R18",
+                    "pos": {
+                        "x": 105.49,
+                        "y": 40.822936
+                    },
+                    "uuid": "cb6808f3-7ba5-483b-922b-b20745b5b44d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "R18 的參考欄位",
+                    "pos": {
+                        "x": 109.83,
+                        "y": 43.0
+                    },
+                    "uuid": "fb7585ec-5b9e-4edd-9ba1-c56bdbacecac"
+                },
+                {
+                    "description": "F.Silkscreen 上的 線段 R19",
+                    "pos": {
+                        "x": 109.79,
+                        "y": 40.822936
+                    },
+                    "uuid": "fc59179d-729b-4532-b9a5-f83670ec6f76"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "R20 的參考欄位",
+                    "pos": {
+                        "x": 118.43,
+                        "y": 43.0
+                    },
+                    "uuid": "099f9b4a-dba4-44c7-8271-11fbf25b36a3"
+                },
+                {
+                    "description": "F.Silkscreen 上的 線段 R21",
+                    "pos": {
+                        "x": 118.39,
+                        "y": 40.822936
+                    },
+                    "uuid": "4db394fe-624c-4bac-b293-32dea7bc45ea"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "R9 的參考欄位",
+                    "pos": {
+                        "x": 100.27,
+                        "y": 69.0
+                    },
+                    "uuid": "2785682c-d3ef-4109-b714-0fa1a45a848c"
+                },
+                {
+                    "description": "F.Silkscreen 上的 線段 R8",
+                    "pos": {
+                        "x": 100.31,
+                        "y": 71.177064
+                    },
+                    "uuid": "8660b71a-2a8a-4a6e-8d6b-8c6e39138c03"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "R8 的參考欄位",
+                    "pos": {
+                        "x": 95.97,
+                        "y": 69.0
+                    },
+                    "uuid": "8c069a45-2003-49ad-9468-f94c330d82af"
+                },
+                {
+                    "description": "F.Silkscreen 上的 線段 R7",
+                    "pos": {
+                        "x": 96.01,
+                        "y": 71.177064
+                    },
+                    "uuid": "df813e0b-b2f1-49f7-914e-399f255f6617"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "C5 的參考欄位",
+                    "pos": {
+                        "x": 111.52,
+                        "y": 56.8
+                    },
+                    "uuid": "0490b105-ba97-45d5-b59f-2135513838cf"
+                },
+                {
+                    "description": "U2 的參考欄位",
+                    "pos": {
+                        "x": 111.89624,
+                        "y": 56.17532
+                    },
+                    "uuid": "e236f1da-90dd-4bf6-8de8-61eba782e844"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "F.Silkscreen 上的 線段 C5",
+                    "pos": {
+                        "x": 112.465,
+                        "y": 57.061252
+                    },
+                    "uuid": "bfc21a04-ebb2-4271-8ece-16c8202ef951"
+                },
+                {
+                    "description": "U2 的參考欄位",
+                    "pos": {
+                        "x": 111.89624,
+                        "y": 56.17532
+                    },
+                    "uuid": "e236f1da-90dd-4bf6-8de8-61eba782e844"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "C5 的參考欄位",
+                    "pos": {
+                        "x": 111.52,
+                        "y": 56.8
+                    },
+                    "uuid": "0490b105-ba97-45d5-b59f-2135513838cf"
+                },
+                {
+                    "description": "F.Silkscreen 上的 線段 U2",
+                    "pos": {
+                        "x": 110.85,
+                        "y": 53.8
+                    },
+                    "uuid": "9cb56e71-6e77-4b36-9c33-c2c63145c829"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "R19 的參考欄位",
+                    "pos": {
+                        "x": 114.13,
+                        "y": 43.0
+                    },
+                    "uuid": "05db9356-3274-49e5-bb31-710058cf357d"
+                },
+                {
+                    "description": "F.Silkscreen 上的 線段 R20",
+                    "pos": {
+                        "x": 114.09,
+                        "y": 40.822936
+                    },
+                    "uuid": "9388b319-93d6-416a-a856-f854810e1b0d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "R7 的參考欄位",
+                    "pos": {
+                        "x": 91.67,
+                        "y": 69.0
+                    },
+                    "uuid": "e6cc87a4-11fc-4e0d-bbf7-9b2c5f6c44b5"
+                },
+                {
+                    "description": "F.Silkscreen 上的 線段 R6",
+                    "pos": {
+                        "x": 91.71,
+                        "y": 71.177064
+                    },
+                    "uuid": "fced89a2-2b69-42b0-87cd-c1df9b96afd3"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "R15 的參考欄位",
+                    "pos": {
+                        "x": 96.93,
+                        "y": 43.0
+                    },
+                    "uuid": "944d6ada-09fb-4aef-a99b-ca7783132408"
+                },
+                {
+                    "description": "F.Silkscreen 上的 線段 R16",
+                    "pos": {
+                        "x": 96.89,
+                        "y": 40.822936
+                    },
+                    "uuid": "ad5a390f-0756-42d3-a982-c24c7f8fd13a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "R14 的參考欄位",
+                    "pos": {
+                        "x": 92.63,
+                        "y": 43.0
+                    },
+                    "uuid": "206585fd-faf9-4e00-b1dc-105f8493adf5"
+                },
+                {
+                    "description": "F.Silkscreen 上的 線段 R15",
+                    "pos": {
+                        "x": 92.59,
+                        "y": 40.822936
+                    },
+                    "uuid": "ec928cd9-1bb0-4a4d-bf0a-587bfc1857e0"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "F.Silkscreen 上的 線段 R23",
+                    "pos": {
+                        "x": 83.772936,
+                        "y": 53.735
+                    },
+                    "uuid": "1271ca5a-09fe-4582-8fb7-26169ddbe60a"
+                },
+                {
+                    "description": "R24 的參考欄位",
+                    "pos": {
+                        "x": 84.0,
+                        "y": 54.35
+                    },
+                    "uuid": "fb59dcd8-943c-4af8-aaa1-26d7ef2d65f6"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "R23 的參考欄位",
+                    "pos": {
+                        "x": 84.0,
+                        "y": 51.35
+                    },
+                    "uuid": "45769992-1409-4feb-be71-0f7484a1998d"
+                },
+                {
+                    "description": "F.Silkscreen 上的 線段 R22",
+                    "pos": {
+                        "x": 83.772936,
+                        "y": 50.735
+                    },
+                    "uuid": "889a5433-195a-4418-9c08-4765bd361827"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "F.Silkscreen 上的 圓形 TP15",
+                    "pos": {
+                        "x": 76.0,
+                        "y": 59.0
+                    },
+                    "uuid": "0d804bbe-4705-416d-a734-5a750090952c"
+                },
+                {
+                    "description": "TP16 的參考欄位",
+                    "pos": {
+                        "x": 76.0,
+                        "y": 60.352
+                    },
+                    "uuid": "63d29d2c-81b9-44b6-be47-8d74ead57338"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "F.Silkscreen 上的 圓形 TP13",
+                    "pos": {
+                        "x": 76.0,
+                        "y": 53.0
+                    },
+                    "uuid": "3592971f-fb74-48c1-96fc-90e1bd3fcda6"
+                },
+                {
+                    "description": "TP14 的參考欄位",
+                    "pos": {
+                        "x": 76.0,
+                        "y": 54.352
+                    },
+                    "uuid": "f2591679-b3f0-4159-a218-9f3c54505e6c"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "F.Silkscreen 上的 圓形 TP14",
+                    "pos": {
+                        "x": 76.0,
+                        "y": 56.0
+                    },
+                    "uuid": "4c59aa14-acf4-454c-8f0d-ecee18ff640c"
+                },
+                {
+                    "description": "TP15 的參考欄位",
+                    "pos": {
+                        "x": 76.0,
+                        "y": 57.352
+                    },
+                    "uuid": "90aa8acf-ed3c-4ee2-a9b7-ea4bbaec4e2e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "F.Silkscreen 上的 圓形 TP12",
+                    "pos": {
+                        "x": 76.0,
+                        "y": 50.0
+                    },
+                    "uuid": "33c18a1b-26d6-42f0-bf53-6b9a98c230de"
+                },
+                {
+                    "description": "TP13 的參考欄位",
+                    "pos": {
+                        "x": 76.0,
+                        "y": 51.352
+                    },
+                    "uuid": "b1834693-ce85-464a-bb9f-e4f7abecb742"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "F.Silkscreen 上的 線段 R24",
+                    "pos": {
+                        "x": 83.772936,
+                        "y": 56.735
+                    },
+                    "uuid": "346d94a9-5ee0-4992-9a29-445b06735af4"
+                },
+                {
+                    "description": "R25 的參考欄位",
+                    "pos": {
+                        "x": 84.0,
+                        "y": 57.35
+                    },
+                    "uuid": "80583893-1e9b-43c5-b074-d53d27b3507a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "R26 的參考欄位",
+                    "pos": {
+                        "x": 84.0,
+                        "y": 60.35
+                    },
+                    "uuid": "0328ecb8-e518-4c59-b3da-ad4219f9b589"
+                },
+                {
+                    "description": "F.Silkscreen 上的 線段 R25",
+                    "pos": {
+                        "x": 83.772936,
+                        "y": 59.735
+                    },
+                    "uuid": "4e9c7c02-3f30-48df-b766-3b519a6c2b56"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "R29 的參考欄位",
+                    "pos": {
+                        "x": 121.0,
+                        "y": 51.35
+                    },
+                    "uuid": "4923181b-ba11-4bc7-b9e9-664980cc7fed"
+                },
+                {
+                    "description": "F.Silkscreen 上的 線段 R28",
+                    "pos": {
+                        "x": 120.772936,
+                        "y": 50.735
+                    },
+                    "uuid": "a0d2377b-1ad4-4821-af7a-b7797f3cfa17"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "F.Silkscreen 上的 線段 R10",
+                    "pos": {
+                        "x": 108.91,
+                        "y": 71.177064
+                    },
+                    "uuid": "7cb8765e-40c7-42ae-97a2-e63168ae0366"
+                },
+                {
+                    "description": "R11 的參考欄位",
+                    "pos": {
+                        "x": 108.87,
+                        "y": 69.0
+                    },
+                    "uuid": "c28f3b85-0935-41ba-b066-46354d0934c9"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "F.Silkscreen 上的 線段 R9",
+                    "pos": {
+                        "x": 104.61,
+                        "y": 71.177064
+                    },
+                    "uuid": "73259d9a-cae1-498f-a232-2e77310ed5e1"
+                },
+                {
+                    "description": "R10 的參考欄位",
+                    "pos": {
+                        "x": 104.57,
+                        "y": 69.0
+                    },
+                    "uuid": "9961097d-5425-46e5-8164-d45a0a6a9ad0"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "R13 的參考欄位",
+                    "pos": {
+                        "x": 117.47,
+                        "y": 69.0
+                    },
+                    "uuid": "433671a0-91d3-4ffa-995b-916c01a1a300"
+                },
+                {
+                    "description": "F.Silkscreen 上的 線段 R12",
+                    "pos": {
+                        "x": 117.51,
+                        "y": 71.177064
+                    },
+                    "uuid": "e1d58ca9-be30-4383-9f3a-96d5208e7777"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "R12 的參考欄位",
+                    "pos": {
+                        "x": 113.17,
+                        "y": 69.0
+                    },
+                    "uuid": "2657886b-c0c9-45c6-b004-28f0ec49ba24"
+                },
+                {
+                    "description": "F.Silkscreen 上的 線段 R11",
+                    "pos": {
+                        "x": 113.21,
+                        "y": 71.177064
+                    },
+                    "uuid": "40d5656d-9f5d-446b-9106-d844fde1a943"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "R24 的參考欄位",
+                    "pos": {
+                        "x": 84.0,
+                        "y": 54.35
+                    },
+                    "uuid": "fb59dcd8-943c-4af8-aaa1-26d7ef2d65f6"
+                },
+                {
+                    "description": "2 上 [/GND] 的焊盤 R23 F.Cu",
+                    "pos": {
+                        "x": 85.0,
+                        "y": 53.0
+                    },
+                    "uuid": "be8f25f3-8ea6-4448-8b9c-887c51483a4f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "TP11 的參考欄位",
+                    "pos": {
+                        "x": 113.0,
+                        "y": 90.352
+                    },
+                    "uuid": "51836206-e587-4322-9f12-cc24ac736bb8"
+                },
+                {
+                    "description": "1 上 [/+3V3] 的焊盤 R4 F.Cu",
+                    "pos": {
+                        "x": 114.5,
+                        "y": 89.5
+                    },
+                    "uuid": "21fa3b2b-9208-4796-a9e2-6918c1acb14b"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        }
+    ]
+}
