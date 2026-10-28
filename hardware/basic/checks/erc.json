@@ -1,0 +1,51 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-28T12:11:04",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.5",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/02aeb40d-691a-47c5-813b-fdc2b35b0f51",
+            "violations": []
+        },
+        {
+            "path": "/PowerMCU/",
+            "uuid_path": "/02aeb40d-691a-47c5-813b-fdc2b35b0f51/cd1d06d3-19c9-490e-b06f-5cf128f9a574",
+            "violations": []
+        },
+        {
+            "path": "/Measurement/",
+            "uuid_path": "/02aeb40d-691a-47c5-813b-fdc2b35b0f51/f13b381b-bab4-4adc-930c-fa69b0601ed0",
+            "violations": []
+        },
+        {
+            "path": "/DisplayUI/",
+            "uuid_path": "/02aeb40d-691a-47c5-813b-fdc2b35b0f51/ee69156e-b488-46e4-95d8-3ac8772560ef",
+            "violations": []
+        }
+    ],
+    "source": "Marc_USB.kicad_sch"
+}

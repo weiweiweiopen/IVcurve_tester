@@ -1,0 +1,21 @@
+{
+  "board": "charging",
+  "status": "prototype",
+  "pcb_sha256": "8546ffafcc8dc03b2250ab6d943453ba54a5aaa7a5ad0241ed614594f3c9e1d8",
+  "fabrication_zip": "charging-PROTOTYPE-JLCPCB.zip",
+  "fabrication_zip_sha256": "e2da096178187d342c07b9d87fbc06bbd7eba8e62baab5506d7275d980071a90",
+  "ERC_violations": 0,
+  "unconnected": 0,
+  "schematic_parity": 0,
+  "DRC_by_type": {
+    "courtyards_overlap": 10,
+    "text_thickness": 1,
+    "silk_over_copper": 8
+  },
+  "DRC_by_severity": {
+    "error": 10,
+    "warning": 9
+  },
+  "core_design_files_unchanged": true,
+  "hardware_test": "Not performed; courtyard/stack-height assumptions and complete harvesting/measurement cycle remain unverified."
+}

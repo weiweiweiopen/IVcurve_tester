@@ -1,0 +1,31 @@
+{
+  "upstream": "https://github.com/dusjagr/IVcurve_tester",
+  "source_files": {
+    "basic/Marc_USB.kicad_pro": "72837c75d1acc56a2f172ac136882da5665d42b8004335f3ec326e103cf449eb",
+    "basic/DisplayUI.kicad_sch": "9a5cf3584078a4a1b4a0c23f9ae0f4c08a1d4b75e188815421849a66f9b690d1",
+    "basic/fp-lib-table": "e03e76148a1e1acc4c33ad1f7bce90b32a3c72f8bc39c8a5517c111c41b2d986",
+    "basic/Marc_USB.kicad_sch": "cda375be79391d2c48142871915c08488d10e221bc4a29e21e38e2bda4447510",
+    "basic/PowerMCU.kicad_sch": "91077feb72d075056c42a485b7980359751cdb8c53401242f5b6ecb6b452dd5e",
+    "basic/Measurement.kicad_sch": "db0ac28c536e52fd56b61d1300be8ba08c171dc244df183007a2a3fa1925fd3e",
+    "basic/Marc_USB.kicad_pcb": "86957b368edd3c9068875964632924f15fea4a884277768623eafbaf20462af8",
+    "basic/Marc.kicad_sym": "77f042b88b603402c742735ce84650245a9a184319ff453f886bfb25b5259824",
+    "basic/sym-lib-table": "bff6593ed7d90e203e608e28e04c692cbc056bf7f9c9ed8c3b97a48cbefca076",
+    "basic/source_directory": "solar-oracle-walkman-raw",
+    "charging/Marc_USB.kicad_pro": "72837c75d1acc56a2f172ac136882da5665d42b8004335f3ec326e103cf449eb",
+    "charging/AlwaysOn.kicad_sch": "44eabbf28e10198fc3e9e07c652b647499cbd2fc7c0956011262553ddf033ad2",
+    "charging/DisplayUI.kicad_sch": "9a5cf3584078a4a1b4a0c23f9ae0f4c08a1d4b75e188815421849a66f9b690d1",
+    "charging/fp-lib-table": "b73dc8961dad84c5700a709bb11afeb88a4df49c4a3bc0c91b803bda07aaace8",
+    "charging/Marc_USB.kicad_sch": "092e0ce8ad0ccd3f136e7f0019f0290c5f395071b038031d76352dccafa6428b",
+    "charging/PowerMCU.kicad_sch": "5f9b120894788d11a4b47100a6f323e6002734c6892580358cd250d52347ba80",
+    "charging/solar_oracle.kicad_sym": "41ee1b117e7dae689f502c8e982fe6e7b800f95004518009ad30dee8abe275ea",
+    "charging/Measurement.kicad_sch": "30adefefe3a9b2f0380250c460ccb9eed4862973aec2ad645d8af71e0492ef58",
+    "charging/Marc_USB.kicad_dru": "09f191468502042de5ba052e635c050b1cd7d19ddaf8caf23be5e964fad758aa",
+    "charging/Marc_USB.kicad_pcb": "8546ffafcc8dc03b2250ab6d943453ba54a5aaa7a5ad0241ed614594f3c9e1d8",
+    "charging/HarvestPower.kicad_sch": "cfca45b8cad819f70691914df228b1f36a3db47c943262b611c214d304006fe8",
+    "charging/Marc.kicad_sym": "77f042b88b603402c742735ce84650245a9a184319ff453f886bfb25b5259824",
+    "charging/sym-lib-table": "485dff555b642a8094d9021dc4141c834072d193e5e2ceb0e89398dce6bdafcb",
+    "charging/HarvestSwitch.kicad_sch": "14dcbfb3a17a1b5391b647a05b3b593a6485b2cec5553dd4423e38df09a5bd4a",
+    "charging/source_directory": "solar-oracle-walkman-charge-adg706"
+  },
+  "note": "Source core files are byte-identical copies. Project-local assets are copied by reference; standard KiCad 10 libraries/models remain a prerequisite."
+}

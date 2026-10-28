@@ -1,0 +1,2133 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "f168c90e-889e-402d-8f2c-6880dd66700b")
+	(paper "A3")
+	(title_block
+		(title "Marc USB - PowerMCU - DRAFT NOT FOR FAB")
+		(date "2026-10-18")
+		(rev "D0")
+	)
+	(lib_symbols
+		(symbol "Marc:Capacitor"
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Capacitor"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Capacitor_0_1"
+				(polyline
+					(pts
+						(xy -0.508 -1.778) (xy -0.508 1.778)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 -1.778) (xy 0.508 1.778)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Capacitor_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 4.572)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 4.572)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Marc:LOLIN_S3_MINI_V1"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0 26.67 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LOLIN_S3_MINI_V1"
+				(at 0 24.13 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "LOLIN_S3_MINI_V1_0_1"
+				(rectangle
+					(start -15.24 21.59)
+					(end 15.24 -21.59)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "LOLIN_S3_MINI_V1_1_1"
+				(pin input line
+					(at -20.32 19.05 0)
+					(length 5.08)
+					(name "EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "J2.1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 16.51 0)
+					(length 5.08)
+					(name "GPIO2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "J2.2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 13.97 0)
+					(length 5.08)
+					(name "GPIO4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "J2.3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 11.43 0)
+					(length 5.08)
+					(name "GPIO12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "J2.4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 8.89 0)
+					(length 5.08)
+					(name "GPIO13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "J2.5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 6.35 0)
+					(length 5.08)
+					(name "GPIO11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "J2.6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 3.81 0)
+					(length 5.08)
+					(name "GPIO10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "J2.7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at -20.32 1.27 0)
+					(length 5.08)
+					(name "3V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "J2.8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 -1.27 180)
+					(length 5.08)
+					(name "GPIO43"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "J3.1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 -3.81 180)
+					(length 5.08)
+					(name "GPIO44"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "J3.2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 -6.35 180)
+					(length 5.08)
+					(name "GPIO36"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "J3.3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 -8.89 180)
+					(length 5.08)
+					(name "GPIO35"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "J3.4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 -11.43 180)
+					(length 5.08)
+					(name "GPIO18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "J3.5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 -13.97 180)
+					(length 5.08)
+					(name "GPIO16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "J3.6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 20.32 -16.51 180)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "J3.7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 20.32 -19.05 180)
+					(length 5.08)
+					(name "VBUS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "J3.8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 19.05 180)
+					(length 5.08)
+					(name "GPIO33"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "J4.1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 16.51 180)
+					(length 5.08)
+					(name "GPIO37"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "J4.2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 13.97 180)
+					(length 5.08)
+					(name "GPIO38"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "J4.3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 11.43 180)
+					(length 5.08)
+					(name "GPIO34"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "J4.4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 8.89 180)
+					(length 5.08)
+					(name "GPIO21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "J4.5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 6.35 180)
+					(length 5.08)
+					(name "GPIO17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "J4.6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 20.32 3.81 180)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "J4.7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 1.27 180)
+					(length 5.08)
+					(name "GPIO15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "J4.8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 -1.27 0)
+					(length 5.08)
+					(name "GPIO1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "J5.1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 -3.81 0)
+					(length 5.08)
+					(name "GPIO3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "J5.2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 -6.35 0)
+					(length 5.08)
+					(name "GPIO5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "J5.3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 -8.89 0)
+					(length 5.08)
+					(name "GPIO6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "J5.4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 -11.43 0)
+					(length 5.08)
+					(name "GPIO7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "J5.5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 -13.97 0)
+					(length 5.08)
+					(name "GPIO8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "J5.6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 -16.51 0)
+					(length 5.08)
+					(name "GPIO9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "J5.7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 -19.05 0)
+					(length 5.08)
+					(name "GPIO14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "J5.8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Marc:USB_Return"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "USB_Return"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "USB_Return_0_1"
+				(rectangle
+					(start -15.24 2.54)
+					(end 15.24 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "USB_Return_1_1"
+				(pin power_out line
+					(at 20.32 0 180)
+					(length 5.08)
+					(name "USB_GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "USB ONLY: use module USB-C; no second carrier USB supply and no external 3V3 input."
+		(exclude_from_sim no)
+		(at 25.4 267 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "127026e1-dd63-43d2-ad4c-95817ba240cd")
+	)
+	(text "Onboard ME6211C33; current/thermal budget and recessed USB plug fit NOT qualified."
+		(exclude_from_sim no)
+		(at 25.4 277.16 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "19e540dd-88b2-4246-818d-01c9b8d37369")
+	)
+	(text "J2/J5/J4/J3 pin names match WEMOS V1.0.0 schematic. Antenna / height review pending."
+		(exclude_from_sim no)
+		(at 25.4 282.24 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "22169333-24ef-4578-bc81-bdbc170bc695")
+	)
+	(text "VBUS and MCU_3V3 are module outputs. EPD 3V3_OUT must NEVER join MCU_3V3."
+		(exclude_from_sim no)
+		(at 25.4 272.08 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8e057d2f-b6e6-4fcd-99be-9372e022b8e2")
+	)
+	(no_connect
+		(at 120.65 88.9)
+		(uuid "0c421d1a-da6a-449d-af2a-fb42eeb0e388")
+	)
+	
+	(no_connect
+		(at 80.01 91.44)
+		(uuid "238567cc-d571-43e6-b40a-880ede89d216")
+	)
+	(no_connect
+		(at 120.65 81.28)
+		(uuid "24d3d823-0d10-4030-ac6d-95a7965f32a3")
+	)
+	
+	(no_connect
+		(at 80.01 71.12)
+		(uuid "62d9587a-810a-4c2f-b3d3-ee166fcb38a6")
+	)
+	(no_connect
+		(at 120.65 83.82)
+		(uuid "8e4953bf-be0d-4c52-b016-68ead2b975aa")
+	)
+	(no_connect
+		(at 120.65 93.98)
+		(uuid "95100355-1e70-426e-b46b-322f1c69e29e")
+	)
+	
+	(no_connect
+		(at 120.65 91.44)
+		(uuid "c8a59bb1-c67b-49e9-bd54-e3cd8125e4b0")
+	)
+	
+	(no_connect
+		(at 80.01 93.98)
+		(uuid "f4025367-4ab5-49b2-9f11-8ef9c0f1cf42")
+	)
+	(wire
+		(pts
+			(xy 80.01 109.22) (xy 72.39 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04e0c33c-aa22-4763-a5b2-72f6abfc2b19")
+	)
+	
+	(wire
+		(pts
+			(xy 120.65 109.22) (xy 128.27 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2cc9aa70-7bd8-4f07-991b-3b28319cf887")
+	)
+	(wire
+		(pts
+			(xy 80.01 88.9) (xy 72.39 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32f12bf1-6d2a-42b7-8cd4-e81f498d87d4")
+	)
+	(wire
+		(pts
+			(xy 195.58 95.25) (xy 203.2 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c55da28-0365-4c17-ae75-969b291a28d6")
+	)
+	
+	
+	(wire
+		(pts
+			(xy 185.42 95.25) (xy 177.8 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7304822a-b319-4ae7-bc4a-20bfa228e19a")
+	)
+	(wire
+		(pts
+			(xy 210.82 129.54) (xy 218.44 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "886a37e8-3143-4dee-b03a-ebf7462194bd")
+	)
+	
+	(wire
+		(pts
+			(xy 120.65 106.68) (xy 128.27 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8eac21cb-4b2c-4a50-abd2-89d7411c6c7f")
+	)
+	(wire
+		(pts
+			(xy 80.01 106.68) (xy 72.39 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ad16527-d782-4ea9-80c8-fb7a59a6821d")
+	)
+	(wire
+		(pts
+			(xy 80.01 99.06) (xy 72.39 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a97104c8-90b9-48dc-94dc-e404295f110c")
+	)
+	(wire
+		(pts
+			(xy 80.01 104.14) (xy 72.39 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b406ced8-098a-429c-96dd-aa9aabc99877")
+	)
+	
+	(wire
+		(pts
+			(xy 185.42 64.77) (xy 177.8 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be0f8c02-d7b8-4a4a-86e3-41628deabf0a")
+	)
+	(wire
+		(pts
+			(xy 120.65 86.36) (xy 128.27 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6a3637e-1d40-410a-8437-2ecdf4d9330a")
+	)
+	(wire
+		(pts
+			(xy 120.65 73.66) (xy 128.27 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6da8171-71fa-44ee-9363-67e0eb4b52bc")
+	)
+	(wire
+		(pts
+			(xy 80.01 73.66) (xy 72.39 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf80d7ca-2f0a-4239-b091-4f7f2668ef24")
+	)
+	(wire
+		(pts
+			(xy 195.58 64.77) (xy 203.2 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2aa623f-a5d8-494c-86f7-5a6fcec25fbe")
+	)
+	(wire
+		(pts
+			(xy 120.65 99.06) (xy 128.27 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6de26e4-f7e7-4db1-b98b-d49400da7874")
+	)
+	(wire
+		(pts
+			(xy 80.01 96.52) (xy 72.39 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb4137fc-03ed-4fbf-b17f-13357163bd19")
+	)
+	
+	(wire
+		(pts
+			(xy 80.01 76.2) (xy 72.39 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa7e521f-4775-4a77-ade5-a681cb08722a")
+	)
+	(wire
+		(pts
+			(xy 120.65 76.2) (xy 128.27 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb92b602-ff51-46bc-a6b7-c49e4f9a664b")
+	)
+	(global_label "USB_5V"
+		(shape passive)
+		(at 128.27 109.22 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right)
+		)
+		(uuid "04d0ea56-6341-435e-ad26-ac717f02af73")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 128.27 109.22 180)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+	)
+	(global_label "SPI_SCK" (shape input) (at 120.65 96.52 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "08a34108-0407-461f-b1f4-21bb73c4b4b1"))
+	(global_label "MUX_A1"
+		(shape passive)
+		(at 72.39 99.06 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left)
+		)
+		(uuid "0f982e11-e7ac-4dac-934f-491a71e5d087")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 72.39 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+	)
+	(global_label "SPI_MISO" (shape input) (at 120.65 101.6 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "1b653855-e5fb-4691-94a4-a84a01fc0a31"))
+	(global_label "I2C_SDA"
+		(shape passive)
+		(at 72.39 104.14 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left)
+		)
+		(uuid "1da2c5b8-1131-454f-a1bd-edeece09a188")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 72.39 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+	)
+	(global_label "I2C_SCL"
+		(shape passive)
+		(at 72.39 106.68 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left)
+		)
+		(uuid "251f1328-0c38-4722-9da1-57790aeae222")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 72.39 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+	)
+	(global_label "MUX_EN"
+		(shape passive)
+		(at 72.39 109.22 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left)
+		)
+		(uuid "2e8717ef-1ab8-4481-ba51-3bcc5061e8aa")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 72.39 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+	)
+	(global_label "MUX_A0"
+		(shape passive)
+		(at 72.39 73.66 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left)
+		)
+		(uuid "2f3df26b-74c6-48c1-86b6-4d692a3e583a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 72.39 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 203.2 95.25 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right)
+		)
+		(uuid "379ade8d-0ab3-4ffc-a0e2-065c01105d7f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 203.2 95.25 180)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+	)
+	(global_label "MCU_3V3"
+		(shape passive)
+		(at 177.8 64.77 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left)
+		)
+		(uuid "39d1b009-1265-4272-9c67-d2c2ac767b39")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 177.8 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+	)
+	(global_label "EPD_CS"
+		(shape passive)
+		(at 128.27 73.66 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right)
+		)
+		(uuid "44b3df28-fb01-444d-83e2-78896ab9d8b9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 128.27 73.66 180)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+	)
+	(global_label "SPI_MOSI" (shape input) (at 120.65 104.14 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "50c2c4b8-2e9d-4dfb-a685-0617c38a74b7"))
+	(global_label "BUTTON_N"
+		(shape passive)
+		(at 128.27 99.06 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right)
+		)
+		(uuid "54f7ab87-b742-4f6b-bb7a-bae1c6774675")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 128.27 99.06 180)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 128.27 86.36 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right)
+		)
+		(uuid "590699d4-2b2a-4e46-b459-6b41b77c4855")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 128.27 86.36 180)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 128.27 106.68 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right)
+		)
+		(uuid "5fe188ce-c3d0-4ccd-971a-33674603381e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 128.27 106.68 180)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+	)
+	(global_label "MUX_A3"
+		(shape passive)
+		(at 72.39 96.52 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left)
+		)
+		(uuid "7982ef24-ce95-4242-9a49-20212209b7a9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 72.39 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+	)
+	(global_label "MUX_A2"
+		(shape passive)
+		(at 72.39 76.2 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left)
+		)
+		(uuid "810a2dd0-644b-4c21-9f0f-f415115ff3e9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 72.39 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+	)
+	(global_label "EPD_DC"
+		(shape passive)
+		(at 128.27 76.2 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right)
+		)
+		(uuid "81975a97-47de-49d9-b988-4f4c388bd333")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 128.27 76.2 180)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+	)
+	
+	(global_label "GND"
+		(shape passive)
+		(at 218.44 129.54 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right)
+		)
+		(uuid "c4e6ad54-53e4-48f2-89fb-a1d0d079f5aa")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 218.44 129.54 180)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+	)
+	
+	(global_label "GND"
+		(shape passive)
+		(at 203.2 64.77 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right)
+		)
+		(uuid "cba139dd-ab1d-4efa-aa5c-d784a72a5a95")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 203.2 64.77 180)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+	)
+	(global_label "SRAM_CS" (shape input) (at 120.65 78.74 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "d55053d4-3fa6-4584-9bd3-38291a3c4374"))
+	(global_label "MCU_3V3"
+		(shape passive)
+		(at 72.39 88.9 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left)
+		)
+		(uuid "fc208302-9022-4953-a3a2-a912ee17d600")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 72.39 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+	)
+	(global_label "USB_5V"
+		(shape passive)
+		(at 177.8 95.25 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left)
+		)
+		(uuid "fe798c99-dadc-41b4-9034-a59ec55eb6d3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 177.8 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Marc:Capacitor")
+		(at 190.5 64.77 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "08835dff-bc45-4c97-8778-c741b716f4fe")
+		(property "Reference" "C4"
+			(at 190.5 60.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10u 10V X7R"
+			(at 190.5 68.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 190.5 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 190.5 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 190.5 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 190.5 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLC候選／未核庫存"
+			(at 190.5 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Qualification" "未核定，不可下單"
+			(at 190.5 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "804b42b7-de71-4cc4-8495-b1ce4cb87f1a")
+		)
+		(pin "2"
+			(uuid "7ad95349-d756-429d-b516-9aa3458f1e61")
+		)
+		(instances
+			(project "Marc_USB"
+				(path "/02aeb40d-691a-47c5-813b-fdc2b35b0f51/cd1d06d3-19c9-490e-b06f-5cf128f9a574"
+					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Marc:USB_Return")
+		(at 190.5 129.54 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "219ad3e1-0a3b-4fe6-82e1-21c2095974c1")
+		(property "Reference" "#FLG01"
+			(at 190.5 121.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "External USB return"
+			(at 190.5 124.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 190.5 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 190.5 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 190.5 129.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 190.5 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "Not assembled"
+			(at 190.5 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Qualification" "Actual USB ground supplied through A1 USB connector"
+			(at 190.5 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "767fc6ef-db8e-4335-9896-1efee88c7cae")
+		)
+		(instances
+			(project "Marc_USB"
+				(path "/02aeb40d-691a-47c5-813b-fdc2b35b0f51/cd1d06d3-19c9-490e-b06f-5cf128f9a574"
+					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Marc:Capacitor")
+		(at 190.5 95.25 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6a9d0b34-a862-4042-861e-79985e0e8268")
+		(property "Reference" "C5"
+			(at 190.5 91.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10u 10V X7R"
+			(at 190.5 99.06 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 190.5 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 190.5 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 190.5 95.25 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 190.5 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLC候選／未核庫存"
+			(at 190.5 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Qualification" "未核定，不可下單"
+			(at 190.5 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e9785c6d-0a3d-426d-be29-da7e84a3884e")
+		)
+		(pin "2"
+			(uuid "bdbf60ac-1363-4da4-9afe-8ae40efb7eb1")
+		)
+		(instances
+			(project "Marc_USB"
+				(path "/02aeb40d-691a-47c5-813b-fdc2b35b0f51/cd1d06d3-19c9-490e-b06f-5cf128f9a574"
+					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Marc:LOLIN_S3_MINI_V1")
+		(at 100.33 90.17 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d8db7a27-e700-48d6-9cab-4199eafc35d1")
+		(property "Reference" "A1"
+			(at 100.33 63.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LOLIN S3 Mini V1.0.0"
+			(at 100.33 66.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Marc:LOLIN_S3_MINI_V1"
+			(at 100.33 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.wemos.cc/en/latest/_static/files/sch_s3_mini_v1.0.0.pdf"
+			(at 100.33 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 100.33 90.17 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "LOLIN S3 MINI V1.0.0"
+			(at 100.33 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "後焊"
+			(at 100.33 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Qualification" "官方腳序／高度插座待核"
+			(at 100.33 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "J4.8"
+			(uuid "8b7455b2-f5b6-4486-ba5a-a87888364bda")
+		)
+		(pin "J4.7"
+			(uuid "73e3d64d-8600-440d-8709-c3ff5d9fd0cb")
+		)
+		(pin "J4.6"
+			(uuid "8db446c1-7bbc-44bb-a624-07b97913f8d9")
+		)
+		(pin "J4.5"
+			(uuid "493a9e4d-ad44-436d-bc3a-43fda4a00d38")
+		)
+		(pin "J2.1"
+			(uuid "e88f7287-17c4-41de-9f59-890d6c71e6a2")
+		)
+		(pin "J2.4"
+			(uuid "ecc3b920-4881-44b4-a1af-c4df42af7a44")
+		)
+		(pin "J2.5"
+			(uuid "28d5b3f4-fff7-494b-a777-97c8b388d355")
+		)
+		(pin "J2.6"
+			(uuid "8f59887f-27d6-4b72-887b-73d46b5cea83")
+		)
+		(pin "J2.3"
+			(uuid "ffc2468e-e3ee-431b-8e22-d062d0c1a004")
+		)
+		(pin "J2.2"
+			(uuid "9646107d-ac14-4805-bc60-2e80a406e891")
+		)
+		(pin "J2.7"
+			(uuid "83a42ca8-6fd7-4c3d-8cad-ddb9c9369b2a")
+		)
+		(pin "J2.8"
+			(uuid "6f5aedc0-e282-448c-b64d-d8287cff939d")
+		)
+		(pin "J3.1"
+			(uuid "1224cec4-b9af-4a37-ae97-803091fd76b5")
+		)
+		(pin "J3.2"
+			(uuid "efc46d46-6307-44a0-b3f8-1c0665cb5106")
+		)
+		(pin "J3.3"
+			(uuid "3584dc82-d00a-4b09-b05f-5a9fbfa95780")
+		)
+		(pin "J3.4"
+			(uuid "e29edb31-3ef0-43f7-a8dc-99fa1f0a4717")
+		)
+		(pin "J3.5"
+			(uuid "d78421dd-635e-49e4-a481-808873279aa2")
+		)
+		(pin "J3.6"
+			(uuid "57a9a19b-ed66-455c-b9ab-2b41a0d2a049")
+		)
+		(pin "J3.7"
+			(uuid "69c4e73d-8c4c-43c8-b029-3e0decd2c6c4")
+		)
+		(pin "J3.8"
+			(uuid "e83da14b-8893-4bc0-af71-1c56753b5b58")
+		)
+		(pin "J4.1"
+			(uuid "6a432d5a-1150-4b5b-8e70-31123ff42b12")
+		)
+		(pin "J4.2"
+			(uuid "9061feab-e908-42a2-9053-16009b1a63e8")
+		)
+		(pin "J4.3"
+			(uuid "50d8f223-9e36-4362-a834-8ff19c1c5727")
+		)
+		(pin "J5.1"
+			(uuid "964256e5-e103-45f6-be09-a385ed3bfaab")
+		)
+		(pin "J5.2"
+			(uuid "10938032-7015-4e8b-bb1d-49dc98e906c8")
+		)
+		(pin "J5.3"
+			(uuid "959ae68a-9796-4fb9-89d1-3ce486ce94de")
+		)
+		(pin "J5.4"
+			(uuid "f57db27b-e5b0-4402-a110-fd9974c9bf9b")
+		)
+		(pin "J5.5"
+			(uuid "de652278-368d-460b-aa44-66beead4d036")
+		)
+		(pin "J5.6"
+			(uuid "74a0a466-d425-479a-93b1-e7722c35d7d4")
+		)
+		(pin "J5.7"
+			(uuid "99b28fa2-bd4f-4ddc-a3e0-0a6426eefda9")
+		)
+		(pin "J5.8"
+			(uuid "34c33c96-f8c0-4910-9bed-c1594d7b8949")
+		)
+		(pin "J4.4"
+			(uuid "35c22f48-db89-4144-b9d1-3a1d0d63a376")
+		)
+		(instances
+			(project "Marc_USB"
+				(path "/02aeb40d-691a-47c5-813b-fdc2b35b0f51/cd1d06d3-19c9-490e-b06f-5cf128f9a574"
+					(reference "A1")
+					(unit 1)
+				)
+			)
+		)
+	)
+
+(no_connect (at 80.01 101.6) (uuid "b52bdbef-f45c-494f-a2f0-180f80a9fd83"))
+(no_connect (at 80.01 86.36) (uuid "0f32613a-524c-43e7-bccc-b92b7608879a"))
+
+(no_connect (at 80.01 83.82) (uuid "8c3d80b1-5dc3-4117-b607-6c95a72094bd"))
+(no_connect (at 80.01 81.28) (uuid "db9eeca1-29e0-4be6-a43c-c11605dce369"))
+(no_connect (at 80.01 78.74) (uuid "7fe17ec6-bb80-4908-8a70-2f089a7da4f5"))
+(no_connect (at 120.65 71.12) (uuid "2263978f-b8a6-4651-acb8-cbad1235684b"))
+)

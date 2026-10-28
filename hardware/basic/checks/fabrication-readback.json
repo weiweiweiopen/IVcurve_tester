@@ -1,0 +1,28 @@
+{
+  "pcb_sha256": "86957b368edd3c9068875964632924f15fea4a884277768623eafbaf20462af8",
+  "fabrication_zip_sha256": "eb2ea864f2d8fcb174a6a522c54e2d966ad74851ceb04169762127a09b76e000",
+  "unique_numbered_pins": 160,
+  "numbered_physical_pads": 162,
+  "copper_layers": {
+    "F.Cu": {
+      "unique_pins": 160,
+      "pad_flashes": 162
+    },
+    "B.Cu": {
+      "unique_pins": 60,
+      "pad_flashes": 60
+    }
+  },
+  "max_pad_axis_delta_mm": 0,
+  "drills": {
+    "PTH": {
+      "holes": 106,
+      "max_axis_delta_mm": 0.0005000000000165983
+    },
+    "NPTH": {
+      "holes": 4,
+      "max_axis_delta_mm": 0
+    }
+  },
+  "limits": "Native-coordinate/X2-attribute readback, not independent copper-image connectivity or physical hardware qualification."
+}

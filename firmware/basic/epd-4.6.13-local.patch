@@ -1,0 +1,164 @@
+--- upstream/Adafruit_EPD.h
++++ local/Adafruit_EPD.h
+@@ -86,12 +86,15 @@
+   void setBlackBuffer(int8_t index, bool inverted);
+   void setColorBuffer(int8_t index, bool inverted);
+   void display(bool sleep = false);
++  bool ioFailed() const { return io_failed; } // sticky: reboot after inspection
++
+ 
+   thinkinkmode_t getMode(void) {
+     return inkmode;
+   }
+ 
+  protected:
++  bool io_failed = false;
+   thinkink_sramentrymode_t _data_entry_mode = THINKINK_STANDARD;
+ 
+   void writeRAMFramebufferToEPD(uint8_t* buffer, uint32_t buffer_size,
+--- upstream/Adafruit_EPD.cpp
++++ local/Adafruit_EPD.cpp
+@@ -70,7 +70,7 @@
+   }
+ 
+   spi_dev = new Adafruit_SPIDevice(CS, spi_clock, spi_miso, spi_mosi,
+-                                   4000000,               // frequency
++                                   1000000,               // frequency
+                                    SPI_BITORDER_MSBFIRST, // bit order
+                                    SPI_MODE0              // data mode
+   );
+@@ -99,7 +99,7 @@
+ Adafruit_EPD::Adafruit_EPD(int width, int height, int16_t DC, int16_t RST,
+                            int16_t CS, int16_t SRCS, int16_t BUSY,
+                            SPIClass* spi)
+-    : Adafruit_GFX(width, height), sram(SRCS) {
++    : Adafruit_GFX(width, height), sram(SRCS, spi) {
+   _cs_pin = CS;
+   _reset_pin = RST;
+   _dc_pin = DC;
+@@ -111,7 +111,7 @@
+   }
+ 
+   spi_dev = new Adafruit_SPIDevice(CS,
+-                                   4000000,               // frequency
++                                   1000000,               // frequency
+                                    SPI_BITORDER_MSBFIRST, // bit order
+                                    SPI_MODE0,             // data mode
+                                    spi);
+@@ -374,7 +374,9 @@
+   Serial.println("  Powering Up");
+ #endif
+ 
++  if (io_failed) return;
+   powerUp();
++  if (io_failed) return;
+ 
+ #ifdef EPD_DEBUG
+   Serial.println("  Set RAM address");
+@@ -413,6 +415,7 @@
+   Serial.println("  Update");
+ #endif
+   update();
++  if (io_failed) return;
+   partialsSinceLastFullUpdate = 0;
+ 
+   if (sleep) {
+@@ -534,13 +537,14 @@
+     init_code++;
+     if (cmd == 0xFF) {
+       busy_wait();
++      if (io_failed) return;
+       delay(num_args);
+       continue;
+     }
+     if (num_args > sizeof(buf)) {
+       Serial.println(F("ERROR - buf not large enough!"));
+-      while (1)
+-        delay(10);
++      io_failed = true;
++      return;
+     }
+ 
+     for (int i = 0; i < num_args; i++) {
+--- upstream/Adafruit_MCPSRAM.cpp
++++ local/Adafruit_MCPSRAM.cpp
+@@ -391,7 +391,7 @@
+ /**************************************************************************/
+ void Adafruit_MCPSRAM::csLow() {
+ #ifdef SPI_HAS_TRANSACTION
+-  _spi->beginTransaction(SPISettings(4000000, MSBFIRST, SPI_MODE0));
++  _spi->beginTransaction(SPISettings(1000000, MSBFIRST, SPI_MODE0));
+ #endif
+ #ifdef HAVE_PORTREG
+   *csport &= ~cspinmask;
+--- upstream/drivers/Adafruit_JD79661.cpp
++++ local/drivers/Adafruit_JD79661.cpp
+@@ -193,8 +193,14 @@
+ */
+ /**************************************************************************/
+ void Adafruit_JD79661::busy_wait(void) {
++  if (io_failed) return;
++  const uint32_t started = millis();
+   if (_busy_pin >= 0) {
+-    while (!digitalRead(_busy_pin)) { // wait for busy HIGH!
++    while (!digitalRead(_busy_pin)) { // JD79661: active LOW, ready HIGH
++      if (uint32_t(millis() - started) >= 20000) {
++        io_failed = true;
++        return;
++      }
+       delay(10);
+     }
+   } else {
+@@ -219,6 +225,7 @@
+ */
+ /**************************************************************************/
+ void Adafruit_JD79661::update() {
++  if (io_failed) return;
+   uint8_t buf[1];
+ 
+   // display update sequence
+@@ -226,6 +233,7 @@
+   EPD_command(JD79661_DISPLAY_REFRESH, buf, 1);
+ 
+   busy_wait();
++  if (io_failed) return;
+ 
+   if (_busy_pin <= -1) {
+     delay(1000);
+@@ -256,16 +264,20 @@
+ /**************************************************************************/
+ 
+ void Adafruit_JD79661::powerUp() {
++  if (io_failed) return;
+   hardwareReset();
+   busy_wait();
++  if (io_failed) return;
+ 
+   const uint8_t* init_code = jd79661_default_init_code;
+   if (_epd_init_code != NULL) {
+     init_code = _epd_init_code;
+   }
+   EPD_commandList(init_code);
++  if (io_failed) return;
+ 
+   busy_wait();
++  if (io_failed) return;
+ }
+ 
+ /**************************************************************************/
+@@ -274,6 +286,7 @@
+ */
+ /**************************************************************************/
+ void Adafruit_JD79661::powerDown() {
++  if (io_failed) return;
+   uint8_t buf[1];
+   // Only deep sleep if we can get out of it
+   if (_reset_pin >= 0) {
+@@ -281,6 +294,7 @@
+     buf[0] = 0x00;
+     EPD_command(JD79661_POWER_OFF, buf, 1);
+     busy_wait();
++  if (io_failed) return;
+ 
+     buf[0] = 0xA5;
+     EPD_command(JD79661_DEEP_SLEEP, buf, 1);

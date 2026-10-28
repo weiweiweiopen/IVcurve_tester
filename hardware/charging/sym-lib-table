@@ -1,0 +1,1 @@
+(sym_lib_table (version 7) (lib (name "Marc") (type "KiCad") (uri "${KIPRJMOD}/Marc.kicad_sym") (options "") (descr "Marc USB integrated draft")) (lib (name "solar_oracle") (type "KiCad") (uri "${KIPRJMOD}/solar_oracle.kicad_sym") (options "") (descr "K1 project symbols")))

@@ -1,0 +1,15 @@
+{
+  "environment": "lolin_s3_mini",
+  "platform": "espressif32@7.0.1",
+  "result": "compile_pass",
+  "RAM_bytes": 19684,
+  "Flash_bytes": 304125,
+  "firmware_bin_sha256": "6aaee50eb5e0a354848c63dfcbe0f9051764e9e6dc141c0320576547ea4716a8",
+  "source_sha256": {
+    "src/main.cpp": "664a97147e14d61b6d380bf2735b782c1903e7cff3235fd0582f0be54e37a53c",
+    "include/calibration.h": "720ff10d85aac88566ff1227a58087ff81d5ba6019864bb712b3c6b749f63d34",
+    "include/board_pins.h": "738c9f27431e947aaf6c826e17f824f7b507bca4fb700f2210684371ecfe1b3b"
+  },
+  "hardware_execution": "Not performed",
+  "scope": "Basic USB measurement firmware only; no charging-cycle firmware is claimed."
+}

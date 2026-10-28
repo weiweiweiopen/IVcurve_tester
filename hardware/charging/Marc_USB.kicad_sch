@@ -1,0 +1,373 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "02aeb40d-691a-47c5-813b-fdc2b35b0f51")
+	(paper "A4")
+	(title_block
+		(title "Marc USB - Integrated draft")
+		(date "2026-10-18")
+		(rev "D0")
+		(comment 1 "Based on Marc Dusseiller IVcurve_tester f9a75be; new integrated design")
+	)
+	(lib_symbols)
+	(text "PCB is mechanical baseline + interfaces + off-board staging; NO SIGNAL ROUTING."
+		(exclude_from_sim no)
+		(at 30 165.72 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0cc3d7ed-4f23-4d3e-9f78-f4dcb4778d15")
+	)
+	(text "Global net labels connect sheets. All parts instantiated; actual pins shown on child sheets."
+		(exclude_from_sim no)
+		(at 30 142.86 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "28e71137-9fb3-4130-bc3b-556f29506138")
+	)
+	(text "ADG706 harvest+measurement schematic candidate / NOT FOR FABRICATION"
+		(exclude_from_sim no)
+		(at 30 120 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2e8079db-735c-4f53-a597-b7ee297309ba")
+	)
+	(text "Review gate: verify maximum illuminated Voc/Isc, relay contacts, firmware GPIO/resistor table and physical assembly."
+		(exclude_from_sim no)
+		(at 30 158.1 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5252a91e-1ad2-4d01-8fb0-78d5104bb931")
+	)
+	(text "DSSC -> AEM10941 -> two supercapacitors -> TPS61023 -> LOLIN VBUS"
+		(exclude_from_sim no)
+		(at 30 127.62 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "93881ab7-4484-458f-b0f6-48ea1cdd15a5")
+	)
+	(text "DSSC -> relay -> 16 load candidates -> ADG706 -> GND; ADS1115 senses DUT."
+		(exclude_from_sim no)
+		(at 30 135.24 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9f667ede-6522-47d8-957f-164bf7da983f")
+	)
+	(text "Harvest/relay circuit under integration; no routing or fabrication release."
+		(exclude_from_sim no)
+		(at 30 150.48 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "dc9e99ec-dd50-4607-a6ff-6c0ff3d1ee02")
+	)
+	(sheet
+		(at 35 65)
+		(size 65 35)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "cd1d06d3-19c9-490e-b06f-5cf128f9a574")
+		(property "Sheetname" "PowerMCU"
+			(at 35 63.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "PowerMCU.kicad_sch"
+			(at 35 101.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Marc_USB"
+				(path "/02aeb40d-691a-47c5-813b-fdc2b35b0f51"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 195 65)
+		(size 65 35)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "ee69156e-b488-46e4-95d8-3ac8772560ef")
+		(property "Sheetname" "DisplayUI"
+			(at 195 63.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "DisplayUI.kicad_sch"
+			(at 195 101.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Marc_USB"
+				(path "/02aeb40d-691a-47c5-813b-fdc2b35b0f51"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 115 65)
+		(size 65 35)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "f13b381b-bab4-4adc-930c-fa69b0601ed0")
+		(property "Sheetname" "Measurement"
+			(at 115 63.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Measurement.kicad_sch"
+			(at 115 101.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Marc_USB"
+				(path "/02aeb40d-691a-47c5-813b-fdc2b35b0f51"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 35 110)
+		(size 65 35)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "8e876c37-bb13-475e-a5ed-5709548d7592")
+		(property "Sheetname" "HarvestPower"
+			(at 35 108.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "HarvestPower.kicad_sch"
+			(at 35 146.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Marc_USB"
+				(path "/02aeb40d-691a-47c5-813b-fdc2b35b0f51"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 115 110)
+		(size 65 35)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "d5d5e032-5afb-4f5e-9916-ac654d063b80")
+		(property "Sheetname" "HarvestSwitch"
+			(at 115 108.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "HarvestSwitch.kicad_sch"
+			(at 115 146.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Marc_USB"
+				(path "/02aeb40d-691a-47c5-813b-fdc2b35b0f51"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 195 110)
+		(size 65 35)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "ae4d02bb-0f54-4b75-8807-30cda40df46f")
+		(property "Sheetname" "AlwaysOn"
+			(at 195 108.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "AlwaysOn.kicad_sch"
+			(at 195 146.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Marc_USB"
+				(path "/02aeb40d-691a-47c5-813b-fdc2b35b0f51"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

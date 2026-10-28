@@ -1,0 +1,21 @@
+{
+  "board": "basic",
+  "status": "prototype",
+  "pcb_sha256": "86957b368edd3c9068875964632924f15fea4a884277768623eafbaf20462af8",
+  "fabrication_zip": "basic-JLCPCB.zip",
+  "fabrication_zip_sha256": "eb2ea864f2d8fcb174a6a522c54e2d966ad74851ceb04169762127a09b76e000",
+  "ERC_violations": 0,
+  "unconnected": 0,
+  "schematic_parity": 0,
+  "DRC_by_type": {
+    "courtyards_overlap": 10,
+    "text_thickness": 1,
+    "silk_over_copper": 4
+  },
+  "DRC_by_severity": {
+    "error": 10,
+    "warning": 5
+  },
+  "core_design_files_unchanged": true,
+  "hardware_test": "Not performed; courtyard/stack-height assumptions and complete harvesting/measurement cycle remain unverified."
+}

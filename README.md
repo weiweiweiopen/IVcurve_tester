@@ -1,173 +1,104 @@
-# I-V Curve Analyzer
+# IVcurve_tester — 基本款與充電版
 
-A versatile measurement tool for characterizing low-power energy sources, with a focus on Dye-Sensitized Solar Cells (DSSC) and other experimental photovoltaic devices. This open hardware project uses an ESP32-S3 Mini to provide accurate I-V curve measurements and real-time Maximum Power Point tracking.
+以染料敏化太陽能電池（DSSC）等低功率光伏元件為對象的 I–V 量測板。本儲存庫集中發布兩套 **KiCad 10 硬體工程、製板包與必要文件**。
 
-Originally developed for DIYbio and Hackteria workshops, this analyzer is perfect for:
+## 來源與設計貢獻
 
-- Testing Dye-Sensitized Solar Cells (DSSC) with natural dyes
-- Characterizing small commercial solar cells
-- Evaluating thermoelectric generators (TEGs)
-- Educational demonstrations of photovoltaic principles
-- Rapid prototyping of new energy harvesting devices
+- **基本款的原始 I–V 量測架構、程式與硬體源自 Marc Dusseiller（[@dusjagr](https://github.com/dusjagr)）的 [IVcurve_tester](https://github.com/dusjagr/IVcurve_tester) repo。** 本 repo 是該專案的 fork；MIT 授權與原作者著作權保留於 [LICENSE](LICENSE)。
+- 本地基本款是針對 LOLIN S3 Mini、ADG706、ADS1115 與 Adafruit 4814 顯示板整理的衍生載板，接腳與顯示配置有調整。
+- **充電版的採能／儲能、電源控制與 PCB 衍生設計由 Sol 6.1 完成。** 專案由 Shih-Wei Chieh / weiweiweiopen 維護。
+- 設計完成與硬體驗證是不同階段；兩款在此均以原型狀態發布，詳細檢查結果見下方。其他模型與函式庫來源見 [NOTICE](NOTICE.md)。
 
-The logarithmic resistor array and optional MOSFET configuration allow measurements across a wide range of power outputs, from µW to mW scale, making it ideal for testing experimental and low-power energy sources.
+## 選擇版本
 
-## Features
+| | 基本款／非充電版 | 充電／採能版 |
+|---|---|---|
+| KiCad 工程 | [hardware/basic/Marc_USB.kicad_pro](hardware/basic/Marc_USB.kicad_pro) | [hardware/charging/Marc_USB.kicad_pro](hardware/charging/Marc_USB.kicad_pro) |
+| 製板包 | [basic-JLCPCB.zip](hardware/basic/fabrication/basic-JLCPCB.zip) | [charging-PROTOTYPE-JLCPCB.zip](hardware/charging/fabrication/charging-PROTOTYPE-JLCPCB.zip) |
+| 原理圖閱讀版 | [PDF](hardware/basic/schematic.pdf) | [PDF](hardware/charging/schematic.pdf) |
+| BOM | [basic BOM](hardware/basic/BOM.csv) | [charging BOM](hardware/charging/BOM.csv) |
+| MCU／量測 | LOLIN S3 Mini、ADG706、ADS1115 | 相同量測核心，增加採能與供電切換 |
+| 系統供電 | USB | DSSC → 超級電容 → 5V 升壓；另有 USB 維護模式 |
+| 儲能／充電 | 無 | AEM10941＋兩個並聯 1.5F／5V 超級電容 |
+| 韌體 | [基本款量測程式](firmware/basic/README.md)，已編譯 | 尚未隨本次發布提供完整自動循環韌體 |
 
-- Real-time I-V curve measurement
-- Maximum Power Point (MPP) tracking
-- ADC (ADS1115) for precise voltage measurements
-- OLED display with live readings
-- E-ink display for persistent measurements
-- Logarithmic resistor array for wide measurement range
-- Optional MOSFET for low-resistance measurements
-- Optional: Built-in voltage divider for measuring higher voltage sources (>3.3V)
+兩款均為單片 DSSC 接口：J1 的正、負集電焊盤；PCB 為 2 層。兩套工程各自保留必要的 project-local 元件庫與模型；需安裝 KiCad 10 的標準符號／封裝／3D library。
 
-## Button Control
-The device features a single button for measurement control:
+### 基本款
 
-- OLED display: continously provides real-time measurement data
-- Single press: Initiates a new I-V curve measurement to be displayed on the E-ink display and sent to the serial.
+![基本款 PCB](hardware/basic/preview.png)
 
-## Example I-V Curve
-![Typical solar cell I-V curve showing short circuit current (Isc), open circuit voltage (Voc), and Maximum Power Point (MPP)](./images/typical_IV_curve.jpg)
+USB 供應 MCU、ADC 與顯示模組。DSSC 作為被測元件，透過 ADG706 選擇 16 個負載阻值；ADS1115 讀取電壓，再依負載計算 I–V 點。此款沒有自動充電或儲能電路。
 
-The analyzer measures both the I-V characteristics (blue curve) and power output (red curve) by sweeping through different load resistances. The Maximum Power Point (MPP) represents the optimal operating point where the product of voltage and current yields the highest power output.
+隨附的獨立韌體使用 Adafruit 4814／SSD1680 250×122 三色顯示，按鍵或 Serial `SCAN` 啟動量測。目前電流仍以名義負載或使用者填入的校準阻值估算；MUX 導通電阻、接點與整機校準需實測，不能把估算電流當作已校準儀器規格。
 
-## E-Ink Display Interface
-The analyzer features a 2.9" tri-color (black, white, and red) e-ink display (Adafruit IL0373) for persistent measurement visualization. The e-ink display offers:
+### 充電版
 
-- High contrast, daylight-readable display
-- Persistent display of measurements even when powered off
-- 296x128 pixel resolution
-- Low power consumption
-- E-ink display: Shows the I-V curve with key measurements (Voc, Isc, MPP) 
-- The previous measurement is displayed too in lower contrast to compare
+![充電版 PCB](hardware/charging/preview.png)
 
-The e-ink display provides a persistent view of your latest results that remains visible even when the device is powered off.
+這裡的「充電」是 **DSSC 能量採集並儲入超級電容**。儲能元件為 C201、C202 兩個 1.5F／5V PHB 封裝，並聯後名義總容量 **3F、耐壓仍為5V**。
 
-![E-ink display showing I-V curve measurements](./images/prototype/Prototype_e-ink_display.jpg)
-*The e-ink display shows the current measurement in dark contrast while the previous measurement is shown in lighter contrast for easy comparison.*
-
-## Web Interface
-![Web interface showing real-time I-V curve and power measurements](./images/Screenshot_webinterface.jpg)
-
-The web interface provides real-time visualization of measurements, displaying both the I-V curve (blue) and power curve (pink). Key measurements like Maximum Power Point (MPP), Short Circuit Current (Isc), and Open Circuit Voltage (Voc) are shown in an easy-to-read card layout.
-
-## Hardware Overview
-```ascii
-+-------------+     +-----------+     +--------------+
-|  Solar      |     | ADS1115   |     |  ESP32-S3    |
-|  Cell       |---->| ADC (I2C) |---->|    Mini      |
-| (DUT)       |     |           |     | (I2C Master) |
-+-------------+     +-----------+     +--------------+
-       |                                    ^
-       |                                    |
-       |                                    |
-       |                                    |
-       |           +---------+              |
-       +---------->| MOSFET  |              |
-       |           | Circuit |              |
-       |           +---------+        +---------------+
-       |                |            | UI Controls   |
-       |                v            | OLED, Pots,   |
-       |               GND           | Button,E-ink  |
-       |                             +---------------+
-       |
-       |
-       |            +----------+     +-----------+
-       +----------->| Resistor |     |    MUX    |
-                    |  Array   |---->|  ADG706   |
-                    | (R1-R16) |     | or 4067   |
-                    +----------+     +-----------+
-                                          |
-                                          |
-                                          v
-                                         GND
+```mermaid
+flowchart TD
+    DSSC[DSSC 單片] --> K1[K1 繼電器]
+    K1 -->|失電／SCAN_MODE LOW：採能| AEM[AEM10941]
+    AEM --> STORE[VSTORE：兩個並聯超級電容，共3F]
+    STORE --> AON[TPS7A02：常開3.3V]
+    AON --> TIMER[TPL5111 定時器＋READY邏輯]
+    TIMER -->|PM_READY AND TIMER_REQUEST| BOOST[TPS61023：5V升壓]
+    STORE --> BOOST
+    BOOST --> SWITCH[TPS22917＋JP201控制]
+    SWITCH --> MCU[LOLIN S3 Mini／顯示／量測]
+    MCU -->|SCAN_MODE HIGH| K1
+    K1 -->|量測時| LOAD[ADG706負載＋ADS1115]
+    MCU -->|MCU_DONE| TIMER
 ```
 
-## Key Components
+#### 充電與量測循環
 
-- ESP32-S3 
-- ADG705 16-channel multiplexer
-   - or lower precision: CD74HC4067 16-channel multiplexer
-- SSD1306 OLED display
-- 16 precision resistors (15Ω - 20kΩ)
-- MOSFET for low-resistance measurements
-- ADS1115 ADC for precision Analog Voltage measurements
+1. **預設採能**：K1 未激磁時，DSSC 正端接到 `HARV_P`，進入 AEM10941。量測負載與 ADC 取樣支路由繼電器接點移開。
+2. **採能與儲能**：AEM10941 處理光伏能量轉換與儲能管理；此設計 `CFG=000`，原理圖設定的 MPPT 工作比為約 **70% Voc**。這是採能晶片的設定，與 MCU 掃 I–V 曲線找出 MPP 的量測程序分開。
+3. **累積能量**：超級電容的 `VSTORE` 上升。過充、ready 與放電界限由 AEM10941 與 R280–R283 網路設定；實際門檻、公差與單片 DSSC 的充電速度須量測。
+4. **有條件啟動主系統**：TPS7A02 供應常開控制域；TPL5111 名義約600秒設定與 `PM_READY` 經邏輯閘共同允許 TPS61023 啟動，產生 `SOLAR_5V`。600秒是定時器設定，**不保證每10分鐘一定有足夠能量完成量測**。
+5. **暫停採能來量測**：韌體先停用 ADG706 負載，再令 `SCAN_MODE` 拉高，使 K1 把 DSSC 切到 `LOAD_P`，並把另一組接點接到 `SENSE_P`／ADC。等待繼電器與輸入穩定後才掃描負載；掃描時採能支路斷開，避免充電負載混入 I–V 曲線。
+6. **回到採能**：掃描後停用負載、釋放繼電器，再經 `MCU_DONE`／Schmitt buffer 回報定時器結束主系統供電，回到低耗電等待。完整韌體還需處理 `POWER_WARN_N`、低電壓退出、顯示更新與 DONE 時序。
 
-## Technical Notes
-### Low internal resistance with ADG706 Multiplexer
-To be able to measure the currents at high load (low voltages), which completes the curve to the end, a high quality multiplexer is needed, with very low internal resistance. This is the reason why ADG706 was chosen over the CD74HC4067.
+對應 MCU 腳：`SCAN_MODE=GPIO12`、`MCU_DONE=GPIO13`、`POWER_WARN_N=GPIO11`。目前隨附的基本款程式沒有這套完整控制流程，不能直接把它當作充電版自動循環韌體。
 
-#### Resistance Measurement Accuracy with 4067
-The CD74HC4067 multiplexer has a significant internal ON resistance (RON) of approximately 70Ω that affects measurements. Rather than compensating for this in software, we've directly measured each resistor through the MUX circuit. The resistor values listed in the code (83Ω - 10.3kΩ) already include this MUX internal resistance, ensuring accurate current calculations without additional compensation.
+#### USB 維護模式與能量預算
 
-For example:
- 
-- A 13Ω resistor + ~70Ω MUX RON = 83Ω actual measured value
-- This combined resistance is what's stored in the code
-- No additional software compensation needed
-- Measurements remain accurate across the full range
+- **插 USB 前先將 JP201 設為 OFF**，關閉採能5V到模組 VBUS 的負載開關路徑。這是手動維護模式；目前未宣稱完成自動 USB／採能電源切換驗證。
+- TPL5111 若沒有收到 DONE，其短暫 off 行為不能替代已驗證的整個量測／休眠流程；斷電、重新啟動及放電時間仍需上板確認。
+- 可用能量估算為 `E = ½ × C × (Vhigh² − Vlow²)`；此處 `C≈3F`。充電時間取決於光照、DSSC實際功率、轉換效率、電容漏電及常開域耗電，並非固定時間。
 
-### Sensitivity of the ESP32 internal ADC
-The ESP32 is known for quite a shitty ADC, non-linear in the middle range, with a very slow slope near the ends. This can cause significant issues with accurate voltage measurements, especially at low voltages.
+## 發布狀態
 
-### Use external ADC, such as ADS1115
-Solves the issue.
+本次製板 ZIP 已從**本次發布的 PCB**重新匯出，並保留來源 SHA256。沒有使用舊目錄中與目前PCB來源雜湊不一致的製板包。
 
-## Getting Started
-1. Clone this repository
-2. Install PlatformIO
-3. Connect hardware according to [hardware/HARDWARE.md](hardware/HARDWARE.md)
-4. Build and upload using PlatformIO
+| 原生檢查 | 基本款 | 充電版 |
+|---|---:|---:|
+| ERC | 0 | 0 |
+| 未連接項目 | 0 | 0 |
+| 原理圖／PCB parity | 0 | 0 |
+| DRC courtyard overlap errors | 10 | 10 |
+| 絲印／文字 warnings | 5 | 9 |
 
-## License
-MIT License - See [LICENSE](LICENSE) file
+這些重疊涉及 ESP32 模組與下方元件，沿用**母座架高、底下約15mm淨空**的裝配假設；實際母座外形、背面件與高度公差尚未驗證。因此這是原型板發布，**不是DRC全零或已完成實機充電／量測循環的量產認證**。原生完整報告在各版本的 `checks/`，BOM 仍需實際備料／封裝核對。
 
-## More Information
-See [hardware/HARDWARE.md](hardware/HARDWARE.md) for detailed wiring and setup instructions.
+## 最小目錄
 
-## PCB Design and Prototypes
-The project includes a custom PCB design for a MUX ADG706 for more reliable measurements and compact implementation. Design files and documentation can be found in:
- 
-- Hardware documentation: [`hardware/HARDWARE.md`](hardware/HARDWARE.md)
-- PCB design files: [`hardware/MUX-ADG706/`](hardware/MUX-ADG706/)
-- PCB renders: [`images/pcb/`](images/pcb/)
-- Prototype photos: [`images/prototype/`](images/prototype/)
+```text
+hardware/
+  basic/       # 非充電版KiCad、必要庫／模型、BOM、PDF、製板包與檢查
+  charging/    # 充電版相同交付結構
+firmware/
+  basic/       # 已配合基本款接腳的獨立PlatformIO程式與必要函式庫
+tools/         # KiCad匯出與來源一致性工具
+README.md
+NOTICE.md
+LICENSE
+```
 
-![Prototype measuring DSSC in line](images/prototype/I-V-curve_DSSC_line.jpg)
-*Close-up view of the analyzer displaying real-time measurements on the OLED screen. The device shows voltage, current, and power readings while performing I-V curve analysis.*
+Blender、整機外殼、研究資料、歷史備份、其他硬體版本與 `.pio` 編譯快取不包含在本次發布內容。原 repo 既有軟體歷史仍可透過 Git 歷史查閱。
 
-![Prototype during DSSC measurement](images/prototype/I-V-curve_DSSC_measurement.jpg)
-*First prototype of the I-V Curve Analyzer testing a series of Dye-Sensitized Solar Cells (DSSC). The compact design allows for easy in-line measurements during workshops and experiments.*
-
-### Project Files
-The KiCad project (`MUX-ADG706/`) contains:
-
-- [`MUX-ADG706_v2.kicad_sch`](MUX-ADG706/MUX-ADG706_v2.kicad_sch) - Complete circuit schematic
-- [`MUX-ADG706_v2.kicad_pcb`](MUX-ADG706/MUX-ADG706_v2.kicad_pcb) - PCB layout design
-- [`gerber_MUX-ADG706_v2.zip`](MUX-ADG706/gerber_MUX-ADG706_v2.zip) - Gerber files for PCB manufacturing
-
-## Credits
-Code and hardware design by Marc Dusseiller (@dusjagr), with assistance from the Windsurf AI coding assistant. This collaboration demonstrates how AI tools can enhance open hardware development while maintaining human creativity and expertise at the core of the project.
-
-## References
-- I-V curve image from [PVEducation.org](https://www.pveducation.org/pvcdrom/solar-cell-operation/iv-curve)
-
-## Future Improvements
-Future development plans for the I-V Curve Analyzer include:
-
-1. DONE **Enhanced Multiplexer**: Replace the current multiplexer with ADG706 for lower internal resistance, improving measurement accuracy especially in the low-resistance range.
-
-2. ONGOING **IoT Integration**: Utilize the ESP32's WiFi capabilities to upload measurements to an IoT cloud service for:
-   - Remote monitoring and data logging
-   - Long-term performance analysis
-   - Data sharing and collaboration
-
-3. **On-Board Storage**: Implement measurement storage and numbering on the chip for:
-   - Offline data collection
-   - Sequential measurement tracking
-   - Later retrieval and analysis
-
-These improvements will enhance the device's functionality, usability, and data management capabilities while maintaining its core purpose as an accessible tool for energy harvesting research and education.
+重新匯出兩板：安裝KiCad10後執行 `python3 tools/export_hardware.py`。基本款編譯：`pio run -d firmware/basic`。下載製板檔可使用上方連結或本 repo 的 [Releases](https://github.com/weiweiweiopen/IVcurve_tester/releases)。

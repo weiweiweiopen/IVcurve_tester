@@ -1,0 +1,374 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-28T12:11:06",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.5",
+    "schematic_parity": [],
+    "source": "Marc_USB.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "封裝 C4",
+                    "pos": {
+                        "x": 162.475,
+                        "y": 152.1
+                    },
+                    "uuid": "18e8f1f9-94f9-4be8-9073-3f67847688fb"
+                },
+                {
+                    "description": "封裝 A1",
+                    "pos": {
+                        "x": 139.275,
+                        "y": 158.36
+                    },
+                    "uuid": "f0c023d9-d111-44b0-aa21-3f99cc66e142"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "封裝 R18",
+                    "pos": {
+                        "x": 152.975,
+                        "y": 148.55
+                    },
+                    "uuid": "239bdb88-f2cd-4a60-a5b0-4d0b2c29b1cb"
+                },
+                {
+                    "description": "封裝 A1",
+                    "pos": {
+                        "x": 139.275,
+                        "y": 158.36
+                    },
+                    "uuid": "f0c023d9-d111-44b0-aa21-3f99cc66e142"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "封裝 C5",
+                    "pos": {
+                        "x": 161.925,
+                        "y": 140.25
+                    },
+                    "uuid": "33b5713b-15cc-48c4-9c2a-70e302bee782"
+                },
+                {
+                    "description": "封裝 A1",
+                    "pos": {
+                        "x": 139.275,
+                        "y": 158.36
+                    },
+                    "uuid": "f0c023d9-d111-44b0-aa21-3f99cc66e142"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "封裝 R23",
+                    "pos": {
+                        "x": 151.475,
+                        "y": 140.375
+                    },
+                    "uuid": "3702e910-37e9-4e97-a31b-c5b11af134bc"
+                },
+                {
+                    "description": "封裝 A1",
+                    "pos": {
+                        "x": 139.275,
+                        "y": 158.36
+                    },
+                    "uuid": "f0c023d9-d111-44b0-aa21-3f99cc66e142"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "封裝 R19",
+                    "pos": {
+                        "x": 152.975,
+                        "y": 150.85
+                    },
+                    "uuid": "4e99ed7d-1f36-4a7a-b150-16b9ca2e7b7a"
+                },
+                {
+                    "description": "封裝 A1",
+                    "pos": {
+                        "x": 139.275,
+                        "y": 158.36
+                    },
+                    "uuid": "f0c023d9-d111-44b0-aa21-3f99cc66e142"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "封裝 R24",
+                    "pos": {
+                        "x": 146.375,
+                        "y": 140.375
+                    },
+                    "uuid": "74fa183b-f5ea-486f-9576-ca408d56cec3"
+                },
+                {
+                    "description": "封裝 A1",
+                    "pos": {
+                        "x": 139.275,
+                        "y": 158.36
+                    },
+                    "uuid": "f0c023d9-d111-44b0-aa21-3f99cc66e142"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "封裝 C3",
+                    "pos": {
+                        "x": 162.475,
+                        "y": 146.05
+                    },
+                    "uuid": "a0fa596b-8017-4415-9487-ce57957294f6"
+                },
+                {
+                    "description": "封裝 A1",
+                    "pos": {
+                        "x": 139.275,
+                        "y": 158.36
+                    },
+                    "uuid": "f0c023d9-d111-44b0-aa21-3f99cc66e142"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "封裝 R17",
+                    "pos": {
+                        "x": 162.475,
+                        "y": 143.35
+                    },
+                    "uuid": "ab02f884-0460-4524-901f-b805d8214db3"
+                },
+                {
+                    "description": "封裝 A1",
+                    "pos": {
+                        "x": 139.275,
+                        "y": 158.36
+                    },
+                    "uuid": "f0c023d9-d111-44b0-aa21-3f99cc66e142"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "封裝 U2",
+                    "pos": {
+                        "x": 157.725,
+                        "y": 145.75
+                    },
+                    "uuid": "d150dbad-ab72-44e1-9b10-7e9d0328cf88"
+                },
+                {
+                    "description": "封裝 A1",
+                    "pos": {
+                        "x": 139.275,
+                        "y": 158.36
+                    },
+                    "uuid": "f0c023d9-d111-44b0-aa21-3f99cc66e142"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "封裝 C1",
+                    "pos": {
+                        "x": 153.075,
+                        "y": 145.75
+                    },
+                    "uuid": "e71be66a-4ede-4c47-9588-2a82872a3c66"
+                },
+                {
+                    "description": "封裝 A1",
+                    "pos": {
+                        "x": 139.275,
+                        "y": 158.36
+                    },
+                    "uuid": "f0c023d9-d111-44b0-aa21-3f99cc66e142"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "文字線寬超出範圍 (TrueType 字體字符的筆畫線寬不足)",
+            "items": [
+                {
+                    "description": "F.Silkscreen 上的 PCB文字 'Solar Oracle Walkman 0.9\nWise Mouse Culture 2026\n'",
+                    "pos": {
+                        "x": 124.75,
+                        "y": 152.125
+                    },
+                    "uuid": "93ad269c-33e4-4104-8b64-1d6559e6bc92"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_thickness"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "C5 的參考欄位",
+                    "pos": {
+                        "x": 161.925,
+                        "y": 138.315
+                    },
+                    "uuid": "5dd9be45-3d23-41b6-a0b9-2998fb2d1f83"
+                },
+                {
+                    "description": "J4.7 的非金屬化焊盤 [GND] A1",
+                    "pos": {
+                        "x": 162.215,
+                        "y": 136.77
+                    },
+                    "uuid": "110e642c-8fff-473c-a7a2-4a69e8caf715"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "A1 的參考欄位",
+                    "pos": {
+                        "x": 151.275,
+                        "y": 145.66
+                    },
+                    "uuid": "14a7c195-e4b1-41c7-9662-c9014f8dbbaf"
+                },
+                {
+                    "description": "2 上 [GND] 的焊盤 C1 F.Cu",
+                    "pos": {
+                        "x": 152.3,
+                        "y": 145.75
+                    },
+                    "uuid": "eb66b8cb-3ca4-495f-b087-de6d7c43cb30"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "H4 的參考欄位",
+                    "pos": {
+                        "x": 162.355,
+                        "y": 156.275
+                    },
+                    "uuid": "b44789a2-0a3a-41af-ac48-bab63ab9410a"
+                },
+                {
+                    "description": "J2.7 的非金屬化焊盤 [unconnected-(A1-GPIO10-PadJ2.7)] A1",
+                    "pos": {
+                        "x": 162.215,
+                        "y": 157.09
+                    },
+                    "uuid": "588d7c4e-fa3e-4c56-87fc-0a84c63b09a6"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "R22 的參考欄位",
+                    "pos": {
+                        "x": 159.95,
+                        "y": 124.775
+                    },
+                    "uuid": "578a8cec-35cd-4956-9312-670e167e5397"
+                },
+                {
+                    "description": "19 的非金屬化焊盤 [SD_CS_N] J3",
+                    "pos": {
+                        "x": 159.11,
+                        "y": 124.545
+                    },
+                    "uuid": "2f41853b-17aa-4f5c-a28b-84eefc7eab3c"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        }
+    ]
+}

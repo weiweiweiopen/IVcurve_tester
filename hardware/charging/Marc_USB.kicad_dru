@@ -1,0 +1,4 @@
+(version 1)
+(rule "U208 fixed SOT-563 pad spacing"
+ (constraint clearance (min 0.15mm))
+ (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.Reference == 'U208' && B.Reference == 'U208'"))

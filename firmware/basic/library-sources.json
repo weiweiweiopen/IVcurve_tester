@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Adafruit EPD",
+    "version": "4.6.13",
+    "url": "https://codeload.github.com/adafruit/Adafruit_EPD/zip/refs/tags/4.6.13",
+    "archive_sha256": "dd867b8ffea4fb4d3a1c2551048b0af5a3e6ad9eceb1c3da9abf45389be7d4a4"
+  },
+  {
+    "name": "Adafruit ADS1X15",
+    "version": "2.6.2",
+    "url": "https://codeload.github.com/adafruit/Adafruit_ADS1X15/zip/refs/tags/2.6.2",
+    "archive_sha256": "60003a791c64b4a275e411961a15f248c7fcfe2ae3186bcc4416b724add5972c"
+  },
+  {
+    "name": "Adafruit GFX Library",
+    "version": "1.12.6",
+    "url": "https://codeload.github.com/adafruit/Adafruit-GFX-Library/zip/refs/tags/1.12.6",
+    "archive_sha256": "14b8e13fe563913be820920af55cd9c86686832b8a4a21b0090db697cce8c487"
+  },
+  {
+    "name": "Adafruit BusIO",
+    "version": "1.17.4",
+    "url": "https://codeload.github.com/adafruit/Adafruit_BusIO/zip/refs/tags/1.17.4",
+    "archive_sha256": "e29b45a03874be4c054b04421073675efef5a950b2577b363cff8f17e90db26c"
+  }
+]

@@ -1,0 +1,967 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "23ec6518-4e2e-4bdf-b7a8-59c02db17ae9")
+	(paper "A3")
+	(title_block
+		(title "Marc USB - DisplayUI - DRAFT NOT FOR FAB")
+		(date "2026-10-18")
+		(rev "D0")
+	)
+	(lib_symbols (symbol "Marc:MeasureSwitch" (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property "Reference" "SW" (at 0 3.81 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Value" "MeasureSwitch" (at 0 -3.81 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol "MeasureSwitch_0_1" (polyline (pts (xy -2.54 0) (xy 2.54 1.778)) (stroke (width 0.254) (type default)) (fill (type none)))) (symbol "MeasureSwitch_1_1" (pin passive line (at -5.08 0 0) (length 2.54) (name "" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at 5.08 0 180) (length 2.54) (name "" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))) (embedded_fonts no)) (symbol "Marc:Resistor" (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property "Reference" "R" (at 0 3.81 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Value" "Resistor" (at 0 -3.81 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol "Resistor_0_1" (rectangle (start -2.54 1.016) (end 2.54 -1.016) (stroke (width 0.254) (type default)) (fill (type none)))) (symbol "Resistor_1_1" (pin passive line (at -5.08 0 0) (length 2.54) (name "" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at 5.08 0 180) (length 2.54) (name "" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))) (embedded_fonts no)) (symbol "Marc:Adafruit_4814_FeatherWing" (pin_names (offset 1.016)) (in_bom yes) (on_board yes) (property "Reference" "J" (at 0 25.4 0) (effects (font (size 1 1)))) (property "Value" "Adafruit_4814_FeatherWing" (at 0 22.86 0) (effects (font (size 1 1)))) (property "Footprint" "Marc:Adafruit_4814_FeatherWing_Mating" (at 0 0 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "https://www.adafruit.com/product/4814" (at 0 0 0) (effects (font (size 1 1)) (hide yes))) (symbol "Adafruit_4814_FeatherWing_0_1" (rectangle (start -20.32 20.32) (end 20.32 -20.32) (stroke (width 0.254) (type default)) (fill (type background)))) (symbol "Adafruit_4814_FeatherWing_1_1" (pin passive line (at -25.4000 17.7800 0) (length 5.08) (name "RESET_AUTO" (effects (font (size 1 1)))) (number "1" (effects (font (size 1 1))))) (pin power_in line (at -25.4000 15.2400 0) (length 5.08) (name "3V3" (effects (font (size 1 1)))) (number "2" (effects (font (size 1 1))))) (pin passive line (at -25.4000 12.7000 0) (length 5.08) (name "AREF" (effects (font (size 1 1)))) (number "3" (effects (font (size 1 1))))) (pin power_in line (at -25.4000 10.1600 0) (length 5.08) (name "GND" (effects (font (size 1 1)))) (number "4" (effects (font (size 1 1))))) (pin passive line (at -25.4000 7.6200 0) (length 5.08) (name "A0" (effects (font (size 1 1)))) (number "5" (effects (font (size 1 1))))) (pin passive line (at -25.4000 5.0800 0) (length 5.08) (name "A1" (effects (font (size 1 1)))) (number "6" (effects (font (size 1 1))))) (pin passive line (at -25.4000 2.5400 0) (length 5.08) (name "A2" (effects (font (size 1 1)))) (number "7" (effects (font (size 1 1))))) (pin passive line (at -25.4000 0.0000 0) (length 5.08) (name "A3" (effects (font (size 1 1)))) (number "8" (effects (font (size 1 1))))) (pin passive line (at -25.4000 -2.5400 0) (length 5.08) (name "A4" (effects (font (size 1 1)))) (number "9" (effects (font (size 1 1))))) (pin passive line (at -25.4000 -5.0800 0) (length 5.08) (name "A5" (effects (font (size 1 1)))) (number "10" (effects (font (size 1 1))))) (pin input line (at -25.4000 -7.6200 0) (length 5.08) (name "SCK" (effects (font (size 1 1)))) (number "11" (effects (font (size 1 1))))) (pin input line (at -25.4000 -10.1600 0) (length 5.08) (name "MOSI" (effects (font (size 1 1)))) (number "12" (effects (font (size 1 1))))) (pin output line (at -25.4000 -12.7000 0) (length 5.08) (name "MISO" (effects (font (size 1 1)))) (number "13" (effects (font (size 1 1))))) (pin passive line (at -25.4000 -15.2400 0) (length 5.08) (name "RX" (effects (font (size 1 1)))) (number "14" (effects (font (size 1 1))))) (pin passive line (at -25.4000 -17.7800 0) (length 5.08) (name "TX" (effects (font (size 1 1)))) (number "15" (effects (font (size 1 1))))) (pin passive line (at -25.4000 -20.3200 0) (length 5.08) (name "GPIO" (effects (font (size 1 1)))) (number "16" (effects (font (size 1 1))))) (pin passive line (at 25.4000 17.7800 180) (length 5.08) (name "SDA" (effects (font (size 1 1)))) (number "17" (effects (font (size 1 1))))) (pin passive line (at 25.4000 15.2400 180) (length 5.08) (name "SCL" (effects (font (size 1 1)))) (number "18" (effects (font (size 1 1))))) (pin input line (at 25.4000 12.7000 180) (length 5.08) (name "SDCS_D5" (effects (font (size 1 1)))) (number "19" (effects (font (size 1 1))))) (pin input line (at 25.4000 10.1600 180) (length 5.08) (name "SRAMCS_D6" (effects (font (size 1 1)))) (number "20" (effects (font (size 1 1))))) (pin input line (at 25.4000 7.6200 180) (length 5.08) (name "ECS_D9" (effects (font (size 1 1)))) (number "21" (effects (font (size 1 1))))) (pin input line (at 25.4000 5.0800 180) (length 5.08) (name "DC_D10" (effects (font (size 1 1)))) (number "22" (effects (font (size 1 1))))) (pin passive line (at 25.4000 2.5400 180) (length 5.08) (name "D11" (effects (font (size 1 1)))) (number "23" (effects (font (size 1 1))))) (pin passive line (at 25.4000 0.0000 180) (length 5.08) (name "D12" (effects (font (size 1 1)))) (number "24" (effects (font (size 1 1))))) (pin passive line (at 25.4000 -2.5400 180) (length 5.08) (name "D13" (effects (font (size 1 1)))) (number "25" (effects (font (size 1 1))))) (pin passive line (at 25.4000 -5.0800 180) (length 5.08) (name "USB_NC" (effects (font (size 1 1)))) (number "26" (effects (font (size 1 1))))) (pin passive line (at 25.4000 -7.6200 180) (length 5.08) (name "EN_NC" (effects (font (size 1 1)))) (number "27" (effects (font (size 1 1))))) (pin passive line (at 25.4000 -10.1600 180) (length 5.08) (name "VBAT_NC" (effects (font (size 1 1)))) (number "28" (effects (font (size 1 1))))))))
+	(text "Adafruit 4814: SSD1680 / 250x122 / red-black-white; full Feather 16+12 mating pins." (exclude_from_sim no) (at 25.4 267 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "0b8f849a-94df-4f75-ba9c-9a29673f82ee"))
+	(text "3.3V ONLY at pin2. USB/VBAT/EN unused. Factory SJ1..SJ4 closed; SDCS pulled high; no SD." (exclude_from_sim no) (at 25.4 272.08 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "66ae3497-c64e-4e40-8f8e-061f48110097"))
+	(text "Collector A/B polarity, zebra material, force/resistance and plunger stack remain UNQUALIFIED."
+		(exclude_from_sim no)
+		(at 25.4 287.32 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6cfd13fc-ac11-45f0-b3b2-055a4690915b")
+	)
+	(text "Onboard auto-reset; RESET header pin1 NC. BUSY testpad not wired. MCU GPIO10/GPIO7 NC." (exclude_from_sim no) (at 25.4 277.16 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "8c5407ab-5743-4d02-9a48-8073e5ae01aa"))
+	(text "SW1 short press = scan; long press = scale menu; serial/web scale configuration patch required."
+		(exclude_from_sim no)
+		(at 25.4 282.24 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a9f89d21-409a-4e65-9e8e-bc8e457fe32a")
+	)
+	
+	
+	(wire
+		(pts
+			(xy 209.55 180.34) (xy 217.17 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13257aa3-067c-4e9f-a02d-9cc28a8311d1")
+	)
+	
+	
+	(wire
+		(pts
+			(xy 209.55 100.33) (xy 217.17 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23962538-ae2c-45b3-93b2-25158c4b9319")
+	)
+	(wire
+		(pts
+			(xy 199.39 154.94) (xy 191.77 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26b8e251-9eee-4b80-8645-a6012a5ae514")
+	)
+	(wire
+		(pts
+			(xy 199.39 129.54) (xy 191.77 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ecaf8f1-c3da-47d1-8e37-71d946b326fa")
+	)
+	
+	(wire
+		(pts
+			(xy 199.39 204.47) (xy 191.77 204.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c257e83-8fdd-4ad5-b386-c9a39499bf09")
+	)
+	(wire
+		(pts
+			(xy 199.39 180.34) (xy 191.77 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64c2caae-6a76-4d5f-a99d-787e3aae295b")
+	)
+	
+	
+	
+	(wire
+		(pts
+			(xy 209.55 129.54) (xy 217.17 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8411c75b-0229-4323-a956-d401a08e1120")
+	)
+	
+	
+	
+	
+	(wire
+		(pts
+			(xy 199.39 100.33) (xy 191.77 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c085d187-7d22-4d6c-a874-b98b43b2d970")
+	)
+	
+	(wire
+		(pts
+			(xy 209.55 154.94) (xy 217.17 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e241d1e1-92a5-4cec-a11b-17f0da42e4ea")
+	)
+	(wire
+		(pts
+			(xy 209.55 204.47) (xy 217.17 204.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f413c803-3497-4b5f-946e-33b25b4c4333")
+	)
+	(global_label "MCU_3V3"
+		(shape passive)
+		(at 191.77 129.54 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left)
+		)
+		(uuid "055617f0-ae08-4505-a58d-b7c335ac142e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 191.77 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+	)
+	(global_label "SD_CS_N"
+		(shape passive)
+		(at 217.17 154.94 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right)
+		)
+		(uuid "125cbf03-d8fb-4a32-acd3-cb4384d8d1ed")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 217.17 154.94 180)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+	)
+	
+	
+	(global_label "EPD_CS"
+		(shape passive)
+		(at 217.17 180.34 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right)
+		)
+		(uuid "3ff7969d-69b4-45f7-a321-1b6e9d219a23")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 217.17 180.34 180)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+	)
+	
+	
+	(global_label "MCU_3V3"
+		(shape passive)
+		(at 191.77 204.47 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left)
+		)
+		(uuid "4a512066-3526-4890-9ec2-dfaab46d4e86")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 191.77 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+	)
+	(global_label "BUTTON_N"
+		(shape passive)
+		(at 217.17 129.54 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right)
+		)
+		(uuid "5285f161-ca52-4e64-9cbe-74e6adb8e46b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 217.17 129.54 180)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+	)
+	
+	
+	(global_label "BUTTON_N"
+		(shape passive)
+		(at 191.77 100.33 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left)
+		)
+		(uuid "6ef752ff-b3e0-45d6-98f9-d5a050b48e33")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 191.77 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+	)
+	(global_label "MCU_3V3"
+		(shape passive)
+		(at 191.77 154.94 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left)
+		)
+		(uuid "77f954b1-f273-466c-90aa-b63d89d14be2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 191.77 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+	)
+	
+	
+	
+	
+	
+	(global_label "SRAM_CS"
+		(shape passive)
+		(at 217.17 204.47 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right)
+		)
+		(uuid "e047b7de-ffec-485b-be65-d73fca5d66ad")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 217.17 204.47 180)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 217.17 100.33 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right)
+		)
+		(uuid "fbfd9378-5333-4fe4-bf49-4b21232a0578")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 217.17 100.33 180)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+	)
+	(global_label "MCU_3V3"
+		(shape passive)
+		(at 191.77 180.34 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left)
+		)
+		(uuid "fc55db5b-e79a-4f2f-af06-735d105d89d3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 191.77 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Marc:Resistor")
+		(at 204.47 180.34 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "47868e84-7228-4c41-b0ca-8b6492dec529")
+		(property "Reference" "R23"
+			(at 204.47 176.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 204.47 184.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 204.47 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 204.47 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 204.47 180.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 204.47 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLC候選／未核庫存"
+			(at 204.47 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Qualification" "未核定，不可下單"
+			(at 204.47 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "15bb4513-441e-4905-bef1-d3683cc5e0b0")
+		)
+		(pin "2"
+			(uuid "6a2e718d-09fc-4393-9214-1ca72d477630")
+		)
+		(instances
+			(project "Marc_USB"
+				(path "/02aeb40d-691a-47c5-813b-fdc2b35b0f51/ee69156e-b488-46e4-95d8-3ac8772560ef"
+					(reference "R23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Marc:Resistor")
+		(at 204.47 154.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "48c16308-2072-44eb-a169-8707e0e1b997")
+		(property "Reference" "R22"
+			(at 204.47 151.13 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 204.47 158.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 204.47 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 204.47 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 204.47 154.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 204.47 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLC候選／未核庫存"
+			(at 204.47 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Qualification" "未核定，不可下單"
+			(at 204.47 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5b7d6c61-6caf-42e8-88af-ebbeab4cd71f")
+		)
+		(pin "2"
+			(uuid "d467daa0-e1fe-4239-b4aa-64a8e12035e3")
+		)
+		(instances
+			(project "Marc_USB"
+				(path "/02aeb40d-691a-47c5-813b-fdc2b35b0f51/ee69156e-b488-46e4-95d8-3ac8772560ef"
+					(reference "R22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Marc:Resistor")
+		(at 204.47 129.54 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "68bee887-13b9-4f8d-bc04-29113d5e3cb7")
+		(property "Reference" "R21"
+			(at 204.47 125.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 204.47 133.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 204.47 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 204.47 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 204.47 129.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 204.47 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLC候選／未核庫存"
+			(at 204.47 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Qualification" "未核定，不可下單"
+			(at 204.47 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7ac88865-bb00-4d50-b8e7-f88f163e43b7")
+		)
+		(pin "2"
+			(uuid "f2647259-45bc-461b-9c37-509f53bb81a2")
+		)
+		(instances
+			(project "Marc_USB"
+				(path "/02aeb40d-691a-47c5-813b-fdc2b35b0f51/ee69156e-b488-46e4-95d8-3ac8772560ef"
+					(reference "R21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Marc:MeasureSwitch")
+		(at 204.47 100.33 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "df3017d1-5557-41e5-bc6c-cf2ffce01d04")
+		(property "Reference" "SW1"
+			(at 204.47 96.52 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MEASURE / SCALE"
+			(at 204.47 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_TL3342"
+			(at 204.47 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 204.47 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 204.47 100.33 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "TL3342候選"
+			(at 204.47 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLC候選／未核庫存"
+			(at 204.47 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Qualification" "柱塞行程／高度待核"
+			(at 204.47 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "92ffbf14-666c-4c1d-b474-68d80e9099fe")
+		)
+		(pin "2"
+			(uuid "b2c334a1-1605-424e-9003-533721ef242a")
+		)
+		(instances
+			(project "Marc_USB"
+				(path "/02aeb40d-691a-47c5-813b-fdc2b35b0f51/ee69156e-b488-46e4-95d8-3ac8772560ef"
+					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Marc:Resistor")
+		(at 204.47 204.47 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "eef9317f-27be-464c-bfce-015a599d22d0")
+		(property "Reference" "R24"
+			(at 204.47 200.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 204.47 208.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 204.47 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 204.47 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 204.47 204.47 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 204.47 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLC候選／未核庫存"
+			(at 204.47 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Qualification" "未核定，不可下單"
+			(at 204.47 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9d824860-3e1a-41df-9df0-b03ec44fe017")
+		)
+		(pin "2"
+			(uuid "df490340-392d-4318-969e-fbc170ab6499")
+		)
+		(instances
+			(project "Marc_USB"
+				(path "/02aeb40d-691a-47c5-813b-fdc2b35b0f51/ee69156e-b488-46e4-95d8-3ac8772560ef"
+					(reference "R24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol (lib_id "Marc:Adafruit_4814_FeatherWing") (at 100.33 100.33 0) (unit 1) (body_style 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (dnp no) (uuid "f534dd91-38a2-4cd1-8a03-21154e695035") (property "Reference" "J3" (at 100.33 80.01 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Value" "Adafruit 4814 SSD1680 250x122" (at 100.33 82.55 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "Marc:Adafruit_4814_FeatherWing_Mating" (at 100.33 100.33 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Datasheet" "https://www.adafruit.com/product/4814" (at 100.33 100.33 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 100.33 100.33 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "MPN" "4814" (at 100.33 100.33 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Assembly" "Male 1x16 + 1x12 headers mating factory INNER socket rows; stack height UNVERIFIED" (at 100.33 100.33 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Qualification" "4814 SSD1680; common CAD outline; physical revision and mating Z UNVERIFIED" (at 100.33 100.33 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (instances (project "Marc_USB" (path "/02aeb40d-691a-47c5-813b-fdc2b35b0f51/ee69156e-b488-46e4-95d8-3ac8772560ef" (reference "J3") (unit 1)))) (pin "1" (uuid "775fc4f9-4e23-4398-a2d6-c772f831f289")) (pin "2" (uuid "6dbac52d-6e8e-4b98-b434-a9f904f3c0ab")) (pin "3" (uuid "0377cb2c-64fc-4784-8a32-d3010b99ec55")) (pin "4" (uuid "1596b7d0-8ef3-4a45-85c8-3b2a61fa4d99")) (pin "5" (uuid "51f5947f-1e2e-463a-8f11-57d88606a622")) (pin "6" (uuid "897ccc30-dc36-475c-8bb0-5b880b51adf7")) (pin "7" (uuid "2aa30bef-251d-43f8-b8af-e08546712d99")) (pin "8" (uuid "fbdac0c3-877b-434d-804c-52a8996948f6")) (pin "9" (uuid "8afad834-c972-4de4-86d1-377d8aedff6b")) (pin "10" (uuid "3e72badf-d094-48ec-afa5-38e43b727b5d")) (pin "11" (uuid "90418fef-40c8-4dff-a1a6-fb864b12db2e")) (pin "12" (uuid "91a981af-c1f6-4565-afeb-1aff1506795a")) (pin "13" (uuid "d3aca944-7264-4c25-989a-740889b90804")) (pin "14" (uuid "53216907-0e2b-438f-9385-ad58f452d958")) (pin "15" (uuid "9099194d-4427-479a-a328-147e08853d7a")) (pin "16" (uuid "566f4723-597c-4da1-a62a-8a589c2e87ed")) (pin "17" (uuid "87c9cf9f-c7de-4608-8759-8dec2f530da0")) (pin "18" (uuid "a462af85-5f46-4c20-8d01-d6aa47931168")) (pin "19" (uuid "7b930c73-6322-4b69-bf7b-4068bc50d5cc")) (pin "20" (uuid "fb52a2d5-4a52-4907-87bd-0b7b4c825e7b")) (pin "21" (uuid "1a47ac8b-50a3-498a-91bf-5064b347120e")) (pin "22" (uuid "342a91a0-a91c-47ac-9b93-f01383df7f85")) (pin "23" (uuid "20245249-1fd8-4546-a987-7254e340a9ae")) (pin "24" (uuid "510f253e-cf14-4f46-9fbb-bdf560879de1")) (pin "25" (uuid "36bdd5e3-7343-4b03-9d4a-fc59f1502981")) (pin "26" (uuid "fa67e104-3ce6-4836-80a3-af29ec59790a")) (pin "27" (uuid "297efd62-a649-4424-9550-c418926c4b62")) (pin "28" (uuid "5fd3b21b-1afe-4662-9f65-9601daff0c3b")))
+
+(no_connect (at 74.9300 82.5500) (uuid "bd13a566-abd3-4d4c-a07e-4db756de5100"))
+(global_label "MCU_3V3" (shape input) (at 74.9300 85.0900 0) (effects (font (size 1.0 1.0)) (justify left)) (uuid "ad6768bd-c3db-4f18-a6d6-cd513034e285"))
+(no_connect (at 74.9300 87.6300) (uuid "04a48b51-b62b-464f-8320-ec0a448a11b9"))
+(global_label "GND" (shape input) (at 74.9300 90.1700 0) (effects (font (size 1.0 1.0)) (justify left)) (uuid "a89324ef-7437-4cd2-bb53-165273b5aef7"))
+(no_connect (at 74.9300 92.7100) (uuid "33b00ea6-be8d-447c-b7ad-84c302f7b190"))
+(no_connect (at 74.9300 95.2500) (uuid "9ff3dbbb-2c90-4bcd-9a9b-3deb9f4d3ff1"))
+(no_connect (at 74.9300 97.7900) (uuid "348eea5b-5b6d-497b-b230-d0f341041027"))
+(no_connect (at 74.9300 100.3300) (uuid "654dd1db-8a11-4cb4-9b6b-44e32a4bc8f6"))
+(no_connect (at 74.9300 102.8700) (uuid "e3698c49-815e-4c8a-8968-24b04d5a3240"))
+(no_connect (at 74.9300 105.4100) (uuid "19624fba-a7fc-4c30-ad37-d80537a1db5f"))
+(global_label "SPI_SCK" (shape input) (at 74.9300 107.9500 0) (effects (font (size 1.0 1.0)) (justify left)) (uuid "db2ce7fd-d17a-48e0-a43e-860587bdd152"))
+(global_label "SPI_MOSI" (shape input) (at 74.9300 110.4900 0) (effects (font (size 1.0 1.0)) (justify left)) (uuid "c79458d4-4146-45b7-9aa6-27f58f47b82c"))
+(global_label "SPI_MISO" (shape input) (at 74.9300 113.0300 0) (effects (font (size 1.0 1.0)) (justify left)) (uuid "9d10a5d5-e203-40a5-9315-947877bc56b2"))
+(no_connect (at 74.9300 115.5700) (uuid "5d94ca6c-c0a7-41c7-84c2-909882acb142"))
+(no_connect (at 74.9300 118.1100) (uuid "18b1facc-9131-400b-b97d-14f4454a69fa"))
+(no_connect (at 74.9300 120.6500) (uuid "e4701214-9582-492a-b5b3-fe2ffd2a0f17"))
+(no_connect (at 125.7300 82.5500) (uuid "f01f2dbd-b8ad-40e5-9e03-6566fecac6b5"))
+(no_connect (at 125.7300 85.0900) (uuid "d547b561-f53f-4432-b622-7d2ddcb9aa06"))
+(global_label "SD_CS_N" (shape input) (at 125.7300 87.6300 180) (effects (font (size 1.0 1.0)) (justify right)) (uuid "e8a4dce2-8349-41bf-88ea-57f1e591e299"))
+(global_label "SRAM_CS" (shape input) (at 125.7300 90.1700 180) (effects (font (size 1.0 1.0)) (justify right)) (uuid "d99ec73e-8dd1-46aa-88f7-87d5006b05fe"))
+(global_label "EPD_CS" (shape input) (at 125.7300 92.7100 180) (effects (font (size 1.0 1.0)) (justify right)) (uuid "11d83983-1d68-405f-99cf-178aaedee4d0"))
+(global_label "EPD_DC" (shape input) (at 125.7300 95.2500 180) (effects (font (size 1.0 1.0)) (justify right)) (uuid "99a78781-5d8e-44f4-9ab1-6cf08258db39"))
+(no_connect (at 125.7300 97.7900) (uuid "af5b312e-731f-43a3-8a0a-eb3060e74a06"))
+(no_connect (at 125.7300 100.3300) (uuid "ed0e56b6-84fd-4e47-b317-f9c5f26c61c0"))
+(no_connect (at 125.7300 102.8700) (uuid "f150c5a9-aa1b-49c4-9917-135087a22d86"))
+(no_connect (at 125.7300 105.4100) (uuid "c485bf7c-be05-4f4b-8f8c-3230ee1c15be"))
+(no_connect (at 125.7300 107.9500) (uuid "a52a2e0a-5567-4784-8fe7-e0ffd2eeeb18"))
+(no_connect (at 125.7300 110.4900) (uuid "a92f3be2-b852-4949-9843-9fc6a9bc7090"))
+)
