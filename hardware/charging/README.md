@@ -1,18 +1,46 @@
-# 充電／能量採集版
+# Charging and Energy-Harvesting I–V Board
 
-以Marc Dusseiller的I–V量測架構為基礎，採能、儲能、切換與PCB衍生設計由 **Sol 6.1** 完成。
+Based on Marc Dusseiller's I–V measurement architecture. The energy-harvesting, storage, switching, and derivative PCB design was completed by **Sol 6.1**.
 
-- [KiCad工程](Marc_USB.kicad_pro)／[原理圖PDF](schematic.pdf)
-- [原型製板ZIP](fabrication/charging-PROTOTYPE-JLCPCB.zip)／[BOM](BOM.csv)
-- [檢查摘要](checks/summary.json)／[ERC](checks/erc.json)／[DRC](checks/drc.json)／[逐pin網路表](checks/pin-map.csv)
-- [完整充電機制與循環](../../README.md#充電版)
+## Power Circuit
 
-## 實際架構
+- AEM10941 harvests energy from the DSSC, with the schematic configured for nominal 70% Voc MPPT.
+- C201 and C202 are parallel 1.5F / 5V PHB supercapacitor packs: 3F total at a 5V rating.
+- TPS7A02 supplies the always-on control domain.
+- TPL5111 and READY logic produce `BOOST_EN = PM_READY AND TIMER_REQUEST`.
+- TPS61023 boosts `VSTORE` to 5V.
+- JP201 controls TPS22917's connection from the harvested 5V supply to module VBUS. Set JP201 OFF before connecting USB.
 
-單片DSSC由K1切換：失電／SCAN_MODE低態接AEM10941採能，激磁時接ADG706負載與ADS1115取樣支路。兩個1.5F／5V PHB超級電容並聯為3F；TPS61023將VSTORE升壓至5V。TPS7A02常開控制域、TPL5111與READY邏輯決定主電源允許。
+## Harvest/Measurement Switching
 
-MCU控制腳：GPIO12 SCAN_MODE、GPIO13 MCU_DONE、GPIO11 POWER_WARN_N。JP201為TPS22917的控制開關，USB維護時先OFF。完整自動掃描／退出／DONE韌體尚未隨本次發布提供；基本款程式沒有這些步驟。
+K1 uses both relay poles:
 
-HarvestSwitch圖紙保留部分歷史註記；本次機制說明依當前netlist：K1 COM3/NC2/NO4負責HARV_P與LOAD_P切換，COM6/NO5另接DUT_P與SENSE_P；不能照舊註記認為第二組接點未使用。負載控制使用ADG706，而非早期595架構。
+| Contact | Connection |
+|---|---|
+| COM3 | `DUT_P` |
+| NC2 | `HARV_P` |
+| NO4 | `LOAD_P` |
+| COM6 | `DUT_P` |
+| NO5 | `SENSE_P` |
+| Pin7 | Unconnected |
 
-兩層PCB；ERC0、未接0、parity0。仍有10項架高模組courtyard重疊error及9項絲印／文字warning。超級電容模型、母座約15mm淨空、充電速度、USB操作及完整實機循環仍待驗證；製板包標為PROTOTYPE。
+With the coil off, the DSSC connects to the harvester. Energizing the coil connects the DSSC to the load bank and ADC sensing branch. Disable the ADG706 load before changing relay state and allow contact/input settling before sampling.
+
+## MCU Control
+
+| Signal | GPIO | Function |
+|---|---:|---|
+| `SCAN_MODE` | 12 | Energize K1 for measurement |
+| `MCU_DONE` | 13 | Complete the timer-controlled power interval |
+| `POWER_WARN_N` | 11 | Storage/power warning input |
+
+Charging-specific firmware must manage relay selection, load enable, voltage warnings, and DONE timing. The basic USB firmware does not implement this complete sequence.
+
+## Circuit References
+
+- [KiCad project](Marc_USB.kicad_pro)
+- [Schematic PDF](schematic.pdf)
+- [BOM](BOM.csv)
+- [Pin/net map](checks/pin-map.csv)
+- [Gerber files](fabrication/charging-PROTOTYPE-JLCPCB.zip)
+- [Charging mechanism and energy budget](../../README.md#charging-board)
